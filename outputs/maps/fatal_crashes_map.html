@@ -1,0 +1,3068 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b429ddf5613300c3d3810de23f61672 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6b429ddf5613300c3d3810de23f61672" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6b429ddf5613300c3d3810de23f61672 = L.map(
+                "map_6b429ddf5613300c3d3810de23f61672",
+                {
+                    center: [37.700260162353516, -122.09659576416016],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2ea708b617f01c72c907f18f05e96d7a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2ea708b617f01c72c907f18f05e96d7a.addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+            var circle_marker_6c046e8b4ec9396ef837222a148f5525 = L.circleMarker(
+                [37.693878173828125, -121.74667358398438],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_93318ff22e1eada2a4ab67500c50d8d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_667dd18657685ec4c2fbe5281af49363 = $(`<div id="html_667dd18657685ec4c2fbe5281af49363" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> FIRST ST & MINES RD<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2023-06-13 at 1548<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     </div></div>`)[0];
+                popup_93318ff22e1eada2a4ab67500c50d8d0.setContent(html_667dd18657685ec4c2fbe5281af49363);
+            
+        
+
+        circle_marker_6c046e8b4ec9396ef837222a148f5525.bindPopup(popup_93318ff22e1eada2a4ab67500c50d8d0)
+        ;
+
+        
+    
+    
+            var circle_marker_e2cdb5579be9e0bf4ca6715bc6688978 = L.circleMarker(
+                [37.697471618652344, -121.80050659179688],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_52d5bdd984d1022abf2b3b1f398673ae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0aa5c2010d8e40b1baf36e23abe467fd = $(`<div id="html_0aa5c2010d8e40b1baf36e23abe467fd" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> AIRWAY BL & RUTAN DR<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2023-01-21 at 1348<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_52d5bdd984d1022abf2b3b1f398673ae.setContent(html_0aa5c2010d8e40b1baf36e23abe467fd);
+            
+        
+
+        circle_marker_e2cdb5579be9e0bf4ca6715bc6688978.bindPopup(popup_52d5bdd984d1022abf2b3b1f398673ae)
+        ;
+
+        
+    
+    
+            var circle_marker_9d7109d25070d1c9b805fe3744c52727 = L.circleMarker(
+                [37.67998123168945, -121.73117065429688],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_6a9b8d500d25a9db1339e3aeee8e00bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b47f6730b6dce1073e97cc92dc686961 = $(`<div id="html_b47f6730b6dce1073e97cc92dc686961" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> EAST AV & MITRA ST<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2023-07-21 at 1522<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     </div></div>`)[0];
+                popup_6a9b8d500d25a9db1339e3aeee8e00bb.setContent(html_b47f6730b6dce1073e97cc92dc686961);
+            
+        
+
+        circle_marker_9d7109d25070d1c9b805fe3744c52727.bindPopup(popup_6a9b8d500d25a9db1339e3aeee8e00bb)
+        ;
+
+        
+    
+    
+            var circle_marker_bcd18a4eb9487bb99006384b8c74805d = L.circleMarker(
+                [37.68014907836914, -121.77375793457033],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_28701ea25ef5e45ad0a4a212f4c97222 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a2a86eaa1d5a00f1918b3abb33d033f = $(`<div id="html_9a2a86eaa1d5a00f1918b3abb33d033f" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> FIRST ST & N ST<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2023-11-04 at 1752<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_28701ea25ef5e45ad0a4a212f4c97222.setContent(html_9a2a86eaa1d5a00f1918b3abb33d033f);
+            
+        
+
+        circle_marker_bcd18a4eb9487bb99006384b8c74805d.bindPopup(popup_28701ea25ef5e45ad0a4a212f4c97222)
+        ;
+
+        
+    
+    
+            var circle_marker_4774aa90f5b52fcad28fd46245db8f40 = L.circleMarker(
+                [37.6827507019043, -121.73416137695312],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_f5f4c43148663e887ebd7b770d74a802 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8719ebcfa1bf50573b3af430923f09b = $(`<div id="html_d8719ebcfa1bf50573b3af430923f09b" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> MINES RD & SHIRLEY WY<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2023-10-17 at 1650<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_f5f4c43148663e887ebd7b770d74a802.setContent(html_d8719ebcfa1bf50573b3af430923f09b);
+            
+        
+
+        circle_marker_4774aa90f5b52fcad28fd46245db8f40.bindPopup(popup_f5f4c43148663e887ebd7b770d74a802)
+        ;
+
+        
+    
+    
+            var circle_marker_16b0fabbbbf1d442b06a37fd28e77d48 = L.circleMarker(
+                [37.66912841796875, -121.79402160644533],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_db8135b82c936baa498b11d93dbdd385 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_299eb1b208bbd4cb13b14001f47ef05c = $(`<div id="html_299eb1b208bbd4cb13b14001f47ef05c" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> ENCINO DR & ESCONDIDO CI<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2024-01-23 at 1434<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚲 Bicycle<br></div></div>`)[0];
+                popup_db8135b82c936baa498b11d93dbdd385.setContent(html_299eb1b208bbd4cb13b14001f47ef05c);
+            
+        
+
+        circle_marker_16b0fabbbbf1d442b06a37fd28e77d48.bindPopup(popup_db8135b82c936baa498b11d93dbdd385)
+        ;
+
+        
+    
+    
+            var circle_marker_0695846e2a4e8b781bd2bfbfd23d90c1 = L.circleMarker(
+                [37.7834587097168, -122.30367279052734],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_f00e347e27b4c764a553dc9a82b39a30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5ba330d27fa59412fe3d6c3427cda04 = $(`<div id="html_b5ba330d27fa59412fe3d6c3427cda04" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> W TOWER AV & LEXINGTON ST<br>         <b>City:</b> ALAMEDA<br>         <b>Date:</b> 2023-08-21 at 356<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_f00e347e27b4c764a553dc9a82b39a30.setContent(html_b5ba330d27fa59412fe3d6c3427cda04);
+            
+        
+
+        circle_marker_0695846e2a4e8b781bd2bfbfd23d90c1.bindPopup(popup_f00e347e27b4c764a553dc9a82b39a30)
+        ;
+
+        
+    
+    
+            var circle_marker_4846eab91ef5fb48e8e8f89b997bc344 = L.circleMarker(
+                [37.7747802734375, -122.27044677734376],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_1eab07d6a08ff56e7135e541ef237ad3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_31db196b9d7bb7d825c917870cc4bd05 = $(`<div id="html_31db196b9d7bb7d825c917870cc4bd05" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> 9TH ST & LINCOLN AV<br>         <b>City:</b> ALAMEDA<br>         <b>Date:</b> 2024-02-11 at 1256<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_1eab07d6a08ff56e7135e541ef237ad3.setContent(html_31db196b9d7bb7d825c917870cc4bd05);
+            
+        
+
+        circle_marker_4846eab91ef5fb48e8e8f89b997bc344.bindPopup(popup_1eab07d6a08ff56e7135e541ef237ad3)
+        ;
+
+        
+    
+    
+            var circle_marker_b9227a9beca39cf2b89c17a23daa0c0a = L.circleMarker(
+                [37.737308502197266, -122.24884033203124],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_b4a6fb5096631452f72029d0ed9972f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d5dba0bdc3260d6f8908157642b9456 = $(`<div id="html_7d5dba0bdc3260d6f8908157642b9456" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> MECARTNEY RD & MARCUSE ST<br>         <b>City:</b> ALAMEDA<br>         <b>Date:</b> 2023-02-07 at 725<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_b4a6fb5096631452f72029d0ed9972f5.setContent(html_7d5dba0bdc3260d6f8908157642b9456);
+            
+        
+
+        circle_marker_b9227a9beca39cf2b89c17a23daa0c0a.bindPopup(popup_b4a6fb5096631452f72029d0ed9972f5)
+        ;
+
+        
+    
+    
+            var circle_marker_0afbf8e40ee9b724045559c1a1bc2797 = L.circleMarker(
+                [37.76411056518555, -122.25193786621094],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_e13bfcf963c527fd0563608a5d60d21f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6577027a05cd4bf908c7398367f9d158 = $(`<div id="html_6577027a05cd4bf908c7398367f9d158" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> SAN ANTONIO AV & WILLOW ST<br>         <b>City:</b> ALAMEDA<br>         <b>Date:</b> 2023-03-17 at 1730<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 6<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br></div></div>`)[0];
+                popup_e13bfcf963c527fd0563608a5d60d21f.setContent(html_6577027a05cd4bf908c7398367f9d158);
+            
+        
+
+        circle_marker_0afbf8e40ee9b724045559c1a1bc2797.bindPopup(popup_e13bfcf963c527fd0563608a5d60d21f)
+        ;
+
+        
+    
+    
+            var circle_marker_0aa56e90c04a9810923d58d5da5a9b3b = L.circleMarker(
+                [37.78791046142578, -122.27632904052734],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_fd541c27d5a1064563525389d600de1a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90dea5b71dd150637cb566ba1a07b58b = $(`<div id="html_90dea5b71dd150637cb566ba1a07b58b" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> MARINA VILLAGE PK & MARINER SQUARE DR<br>         <b>City:</b> ALAMEDA<br>         <b>Date:</b> 2023-12-31 at 1136<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_fd541c27d5a1064563525389d600de1a.setContent(html_90dea5b71dd150637cb566ba1a07b58b);
+            
+        
+
+        circle_marker_0aa56e90c04a9810923d58d5da5a9b3b.bindPopup(popup_fd541c27d5a1064563525389d600de1a)
+        ;
+
+        
+    
+    
+            var circle_marker_5241ed9677235705a68176486c65d27b = L.circleMarker(
+                [37.7027587890625, -121.72006988525392],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_d4e1b6b27c43a32a5f178ac93b188cd1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10167df4da64fd580204534f5145b69b = $(`<div id="html_10167df4da64fd580204534f5145b69b" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> VASCO RD & LAS POSITAS RD<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2024-07-21 at 223<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 2<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_d4e1b6b27c43a32a5f178ac93b188cd1.setContent(html_10167df4da64fd580204534f5145b69b);
+            
+        
+
+        circle_marker_5241ed9677235705a68176486c65d27b.bindPopup(popup_d4e1b6b27c43a32a5f178ac93b188cd1)
+        ;
+
+        
+    
+    
+            var circle_marker_8326f2a453a5c838ffbccf45eaf19576 = L.circleMarker(
+                [37.7799186706543, -122.28437042236328],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_af6dd87f6ec5e5d635d5d5b83f4e34d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94f02d44681f2ec251cd13e25d64a7ca = $(`<div id="html_94f02d44681f2ec251cd13e25d64a7ca" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> POGGI ST & RALPH APPEZZATO MEMORIAL PK<br>         <b>City:</b> ALAMEDA<br>         <b>Date:</b> 2025-01-15 at 1824<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_af6dd87f6ec5e5d635d5d5b83f4e34d2.setContent(html_94f02d44681f2ec251cd13e25d64a7ca);
+            
+        
+
+        circle_marker_8326f2a453a5c838ffbccf45eaf19576.bindPopup(popup_af6dd87f6ec5e5d635d5d5b83f4e34d2)
+        ;
+
+        
+    
+    
+            var circle_marker_d32bfb77c5f31bc464690ce1392d1870 = L.circleMarker(
+                [37.63737106323242, -121.7983169555664],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_1528d0de418d18de74f06b82c8af97e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b223ed3f6fd66eaaf76fd2cb2fb8e8f9 = $(`<div id="html_b223ed3f6fd66eaaf76fd2cb2fb8e8f9" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> VALLECITOS RD & KALTHOFF CO<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2025-04-21 at 555<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 2<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_1528d0de418d18de74f06b82c8af97e5.setContent(html_b223ed3f6fd66eaaf76fd2cb2fb8e8f9);
+            
+        
+
+        circle_marker_d32bfb77c5f31bc464690ce1392d1870.bindPopup(popup_1528d0de418d18de74f06b82c8af97e5)
+        ;
+
+        
+    
+    
+            var circle_marker_421381a00847008a7b9f2e429a469eb6 = L.circleMarker(
+                [37.690391540527344, -122.10188293457033],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_b2e9d587f192129027233ce69fb40524 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_965ce280160322783fb5aa95b8a5fb5b = $(`<div id="html_965ce280160322783fb5aa95b8a5fb5b" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 EB TO I-238 NB & SR-185 (EAST 14TH STREET)<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2023-01-30 at 510<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_b2e9d587f192129027233ce69fb40524.setContent(html_965ce280160322783fb5aa95b8a5fb5b);
+            
+        
+
+        circle_marker_421381a00847008a7b9f2e429a469eb6.bindPopup(popup_b2e9d587f192129027233ce69fb40524)
+        ;
+
+        
+    
+    
+            var circle_marker_649c7bbe88b9297a8bbff4c87a4fb49e = L.circleMarker(
+                [37.46305084228515, -121.92616271972656],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_59c3db21844e40ca505c0f60c6b1b469 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f938f1e8698c5da9fd233ff017beca89 = $(`<div id="html_f938f1e8698c5da9fd233ff017beca89" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 SOUTHBOUND & SANTA CLARA COUNTY LINE<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2023-01-12 at 2202<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_59c3db21844e40ca505c0f60c6b1b469.setContent(html_f938f1e8698c5da9fd233ff017beca89);
+            
+        
+
+        circle_marker_649c7bbe88b9297a8bbff4c87a4fb49e.bindPopup(popup_59c3db21844e40ca505c0f60c6b1b469)
+        ;
+
+        
+    
+    
+            var circle_marker_4edaaba8c2849bcf3a41aa697ae2397f = L.circleMarker(
+                [37.70140075683594, -121.77391815185548],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_ff868f5dfa69df5deb762e2d17569a92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a333e47edad97d440f4ed09a3d10b04 = $(`<div id="html_7a333e47edad97d440f4ed09a3d10b04" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> NORTH LIVERMORE AVENUE & I-580 WESTBOUND<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2023-05-06 at 2109<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 4<br>     </div></div>`)[0];
+                popup_ff868f5dfa69df5deb762e2d17569a92.setContent(html_7a333e47edad97d440f4ed09a3d10b04);
+            
+        
+
+        circle_marker_4edaaba8c2849bcf3a41aa697ae2397f.bindPopup(popup_ff868f5dfa69df5deb762e2d17569a92)
+        ;
+
+        
+    
+    
+            var circle_marker_e01a0104cd969473d482e81a0c0e1732 = L.circleMarker(
+                [37.499149322509766, -121.95688629150392],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_402f0921aa3a2b3d1de547b8a966eece = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ffc392ceea8945c40d51b2e3cb24d639 = $(`<div id="html_ffc392ceea8945c40d51b2e3cb24d639" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 N/B (NIMITZ FREEWAY) & FREMONT BOULEVARD (SOUTH)<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2023-02-19 at 1815<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_402f0921aa3a2b3d1de547b8a966eece.setContent(html_ffc392ceea8945c40d51b2e3cb24d639);
+            
+        
+
+        circle_marker_e01a0104cd969473d482e81a0c0e1732.bindPopup(popup_402f0921aa3a2b3d1de547b8a966eece)
+        ;
+
+        
+    
+    
+            var circle_marker_cf2b4c1dd7d92df7be85a009e7b28ffa = L.circleMarker(
+                [37.69198989868164, -122.10059356689452],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_15931bac5dff9925ea413de30eb559b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb12adfb6a0885e83ecd1a9140fd05ac = $(`<div id="html_cb12adfb6a0885e83ecd1a9140fd05ac" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 W/B & 167TH AVENUE UNDERCROSSING<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2023-06-26 at 938<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_15931bac5dff9925ea413de30eb559b3.setContent(html_cb12adfb6a0885e83ecd1a9140fd05ac);
+            
+        
+
+        circle_marker_cf2b4c1dd7d92df7be85a009e7b28ffa.bindPopup(popup_15931bac5dff9925ea413de30eb559b3)
+        ;
+
+        
+    
+    
+            var circle_marker_5f7eeaa00e10e2eea5fbf0e4a95f2369 = L.circleMarker(
+                [37.70109939575195, -121.79611206054688],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_9a39746a0db8577ea1bd3e954f84fe2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02b2bf0be441e9ca3ff9471117d46e6d = $(`<div id="html_02b2bf0be441e9ca3ff9471117d46e6d" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 WESTBOUND EAST OF ISABEL AVENUE & ISABEL AVENUE<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2023-03-19 at 2119<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_9a39746a0db8577ea1bd3e954f84fe2d.setContent(html_02b2bf0be441e9ca3ff9471117d46e6d);
+            
+        
+
+        circle_marker_5f7eeaa00e10e2eea5fbf0e4a95f2369.bindPopup(popup_9a39746a0db8577ea1bd3e954f84fe2d)
+        ;
+
+        
+    
+    
+            var circle_marker_6658c1ecb78ba7e27a4b969562ad0d2e = L.circleMarker(
+                [37.719261169433594, -121.69300842285156],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_5340a96f514f45b48b0823ca2615fa61 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9dd50952c04338e7f2944d204e23b44b = $(`<div id="html_9dd50952c04338e7f2944d204e23b44b" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 EASTBOUND & GREENVILLE ROAD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2023-08-02 at 647<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_5340a96f514f45b48b0823ca2615fa61.setContent(html_9dd50952c04338e7f2944d204e23b44b);
+            
+        
+
+        circle_marker_6658c1ecb78ba7e27a4b969562ad0d2e.bindPopup(popup_5340a96f514f45b48b0823ca2615fa61)
+        ;
+
+        
+    
+    
+            var circle_marker_3dca8431bf7a65348335fe3e4f726ff6 = L.circleMarker(
+                [37.80717086791992, -122.27739715576172],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_6ef9ad094f10160fbbca32ecfe822ef9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b517d78a61bf157ff2aace3c59212a91 = $(`<div id="html_b517d78a61bf157ff2aace3c59212a91" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-980 E/B FROM 12TH STREET & 14TH STREET OVERCROSSING<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-05-25 at 2240<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_6ef9ad094f10160fbbca32ecfe822ef9.setContent(html_b517d78a61bf157ff2aace3c59212a91);
+            
+        
+
+        circle_marker_3dca8431bf7a65348335fe3e4f726ff6.bindPopup(popup_6ef9ad094f10160fbbca32ecfe822ef9)
+        ;
+
+        
+    
+    
+            var circle_marker_03a18caf528b2c83fe44e74b79141c7e = L.circleMarker(
+                [37.59498977661133, -121.88150787353516],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_5db71655e93b6d8cbe0cff99cbe0dce9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_548c6be7c06130a69dcbd389dd15fca3 = $(`<div id="html_548c6be7c06130a69dcbd389dd15fca3" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> PLEASANTON SUNOL ROAD & PALOMA WAY<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2023-07-21 at 2115<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_5db71655e93b6d8cbe0cff99cbe0dce9.setContent(html_548c6be7c06130a69dcbd389dd15fca3);
+            
+        
+
+        circle_marker_03a18caf528b2c83fe44e74b79141c7e.bindPopup(popup_5db71655e93b6d8cbe0cff99cbe0dce9)
+        ;
+
+        
+    
+    
+            var circle_marker_9b229d424d369f71141bcc5335aff4f4 = L.circleMarker(
+                [37.661258697509766, -122.1047134399414],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_b52d292193401fca46cca391d8157d73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d5c3663840075546cbbc29b337f6e03 = $(`<div id="html_1d5c3663840075546cbbc29b337f6e03" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 SOUTHBOUND (NIMITZ FREEWAY) & WINTON AVE<br>         <b>City:</b> HAYWARD<br>         <b>Date:</b> 2023-04-23 at 310<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_b52d292193401fca46cca391d8157d73.setContent(html_1d5c3663840075546cbbc29b337f6e03);
+            
+        
+
+        circle_marker_9b229d424d369f71141bcc5335aff4f4.bindPopup(popup_b52d292193401fca46cca391d8157d73)
+        ;
+
+        
+    
+    
+            var circle_marker_32721410bb50a9100cfcbde1ee6144fc = L.circleMarker(
+                [37.783390045166016, -122.24044799804688],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_f6c3322164913b58cb36073a089b8387 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cdce8feff1a3219be3115dbd08083bce = $(`<div id="html_cdce8feff1a3219be3115dbd08083bce" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INTERSTATE 880 SOUTHBOUND & 16TH AVENUE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-07-13 at 335<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_f6c3322164913b58cb36073a089b8387.setContent(html_cdce8feff1a3219be3115dbd08083bce);
+            
+        
+
+        circle_marker_32721410bb50a9100cfcbde1ee6144fc.bindPopup(popup_f6c3322164913b58cb36073a089b8387)
+        ;
+
+        
+    
+    
+            var circle_marker_91bd8375fd554deb57a4d6e871a44e27 = L.circleMarker(
+                [37.5336799621582, -122.00900268554688],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_76207c1065b5954bf490904184826845 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6835c4ca73dcaa2e9711f8153a83ca1 = $(`<div id="html_c6835c4ca73dcaa2e9711f8153a83ca1" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INTERSTATE 880 NORTHBOUND (NIMITZ FREEWAY) & MOWRY AVENUE<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2023-05-17 at 23<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_76207c1065b5954bf490904184826845.setContent(html_c6835c4ca73dcaa2e9711f8153a83ca1);
+            
+        
+
+        circle_marker_91bd8375fd554deb57a4d6e871a44e27.bindPopup(popup_76207c1065b5954bf490904184826845)
+        ;
+
+        
+    
+    
+            var circle_marker_d41c8d2e481027b5d7e059766a485c3e = L.circleMarker(
+                [37.649559020996094, -121.89424896240234],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_a9552b14d1217b99c7b954860b1ab1ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_775ce6e019f0948a431610544116213c = $(`<div id="html_775ce6e019f0948a431610544116213c" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-680 SB & BERNAL AVENUE<br>         <b>City:</b> PLEASANTON<br>         <b>Date:</b> 2023-04-27 at 2219<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 8<br>     </div></div>`)[0];
+                popup_a9552b14d1217b99c7b954860b1ab1ba.setContent(html_775ce6e019f0948a431610544116213c);
+            
+        
+
+        circle_marker_d41c8d2e481027b5d7e059766a485c3e.bindPopup(popup_a9552b14d1217b99c7b954860b1ab1ba)
+        ;
+
+        
+    
+    
+            var circle_marker_347ea2a9e583c68b4308d0f0b1016fa8 = L.circleMarker(
+                [37.82783889770508, -122.29451751708984],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_7c944954e372c332e83545d9755b46d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8eae8a4b3600067530974d00674695c3 = $(`<div id="html_8eae8a4b3600067530974d00674695c3" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-80 E/B & I-580 W/B TO I-80 W/B OVER-CROSSING<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-10-06 at 423<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_7c944954e372c332e83545d9755b46d8.setContent(html_8eae8a4b3600067530974d00674695c3);
+            
+        
+
+        circle_marker_347ea2a9e583c68b4308d0f0b1016fa8.bindPopup(popup_7c944954e372c332e83545d9755b46d8)
+        ;
+
+        
+    
+    
+            var circle_marker_02441b6963436d2258cb93a9f762c2f6 = L.circleMarker(
+                [37.8211784362793, -122.20673370361328],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_27c6227010747adb5f4cc91406eec657 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_194d0265d3b777587a6b1fd58981270f = $(`<div id="html_194d0265d3b777587a6b1fd58981270f" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> SR-13 N/B & PARK BLVD<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-07-30 at 115<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_27c6227010747adb5f4cc91406eec657.setContent(html_194d0265d3b777587a6b1fd58981270f);
+            
+        
+
+        circle_marker_02441b6963436d2258cb93a9f762c2f6.bindPopup(popup_27c6227010747adb5f4cc91406eec657)
+        ;
+
+        
+    
+    
+            var circle_marker_b723f2d9877a074afc6f1aabe2acd4d9 = L.circleMarker(
+                [37.79787063598633, -122.21566009521484],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_42b8fe0319a512fd4b98f44ad2a88e00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4a2bee2b12d5c8b6fab91dfec97a3c6 = $(`<div id="html_b4a2bee2b12d5c8b6fab91dfec97a3c6" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 E/B & BOSTON AVENUE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-09-19 at 1058<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     </div></div>`)[0];
+                popup_42b8fe0319a512fd4b98f44ad2a88e00.setContent(html_b4a2bee2b12d5c8b6fab91dfec97a3c6);
+            
+        
+
+        circle_marker_b723f2d9877a074afc6f1aabe2acd4d9.bindPopup(popup_42b8fe0319a512fd4b98f44ad2a88e00)
+        ;
+
+        
+    
+    
+            var circle_marker_fd6333e7fe0f7dd485cec2cf97281005 = L.circleMarker(
+                [37.819679260253906, -122.34651947021484],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_ebb5bdd80b55d4883c0fbd02fe625f03 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c5274308ad109b2ac9f1fbaf12d6d99 = $(`<div id="html_0c5274308ad109b2ac9f1fbaf12d6d99" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-80 W/B & YERBA BUENA ISLAND TUNNEL EAST EDGE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-03-15 at 2320<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 2<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_ebb5bdd80b55d4883c0fbd02fe625f03.setContent(html_0c5274308ad109b2ac9f1fbaf12d6d99);
+            
+        
+
+        circle_marker_fd6333e7fe0f7dd485cec2cf97281005.bindPopup(popup_ebb5bdd80b55d4883c0fbd02fe625f03)
+        ;
+
+        
+    
+    
+            var circle_marker_f318997e4a6d57ea270dd75d1bf63c7d = L.circleMarker(
+                [37.811561584472656, -122.24999237060548],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_874200868cd5adc8d497adc5430aba89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b1b4bb82159c2d4cfec8455218785950 = $(`<div id="html_b1b4bb82159c2d4cfec8455218785950" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 W/B & GRAND AVE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-08-27 at 2330<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_874200868cd5adc8d497adc5430aba89.setContent(html_b1b4bb82159c2d4cfec8455218785950);
+            
+        
+
+        circle_marker_f318997e4a6d57ea270dd75d1bf63c7d.bindPopup(popup_874200868cd5adc8d497adc5430aba89)
+        ;
+
+        
+    
+    
+            var circle_marker_63aebd7aa1a9246393bd57f717a0e595 = L.circleMarker(
+                [37.79951858520508, -122.2211685180664],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_1c9193f0ac2ef846449acfca827d3f43 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b538d9b539ad4fa830b0f8874c938dc = $(`<div id="html_7b538d9b539ad4fa830b0f8874c938dc" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 WESTBOUND FROM FRUITVALE AVENUE & SHEFFIELD AVE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-10-15 at 1735<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_1c9193f0ac2ef846449acfca827d3f43.setContent(html_7b538d9b539ad4fa830b0f8874c938dc);
+            
+        
+
+        circle_marker_63aebd7aa1a9246393bd57f717a0e595.bindPopup(popup_1c9193f0ac2ef846449acfca827d3f43)
+        ;
+
+        
+    
+    
+            var circle_marker_fbef77bdead65b7b620e3a6ff818417f = L.circleMarker(
+                [37.70000076293945, -121.78170013427734],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_1d62c4856b0658036b014fb6480e189c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a690e8b7c3ec14395b0f40d070897c90 = $(`<div id="html_a690e8b7c3ec14395b0f40d070897c90" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 WESTBOUND & NORTHBOUND LIVERMORE AVENUE<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2023-07-16 at 1730<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br></div></div>`)[0];
+                popup_1d62c4856b0658036b014fb6480e189c.setContent(html_a690e8b7c3ec14395b0f40d070897c90);
+            
+        
+
+        circle_marker_fbef77bdead65b7b620e3a6ff818417f.bindPopup(popup_1d62c4856b0658036b014fb6480e189c)
+        ;
+
+        
+    
+    
+            var circle_marker_19ae1c5c8c58d31ba7715d74487b8c34 = L.circleMarker(
+                [37.70241928100586, -121.7414779663086],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_4f0a85f18f1ea77d8d62e0fa9271f68d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b428635cd7f1b23c07744d004f5537c = $(`<div id="html_0b428635cd7f1b23c07744d004f5537c" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 EASTBOUND & FIRST STREET<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2023-05-25 at 335<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     </div></div>`)[0];
+                popup_4f0a85f18f1ea77d8d62e0fa9271f68d.setContent(html_0b428635cd7f1b23c07744d004f5537c);
+            
+        
+
+        circle_marker_19ae1c5c8c58d31ba7715d74487b8c34.bindPopup(popup_4f0a85f18f1ea77d8d62e0fa9271f68d)
+        ;
+
+        
+    
+    
+            var circle_marker_c7cb0747e9150023b74de0c8fbed9c76 = L.circleMarker(
+                [37.7783088684082, -122.23763275146484],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_d0cd39128096898b965681b09612ff8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_358abc2d77c10d3707540cd769501f97 = $(`<div id="html_358abc2d77c10d3707540cd769501f97" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 S/B & 23RD AVE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-08-13 at 2320<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_d0cd39128096898b965681b09612ff8f.setContent(html_358abc2d77c10d3707540cd769501f97);
+            
+        
+
+        circle_marker_c7cb0747e9150023b74de0c8fbed9c76.bindPopup(popup_d0cd39128096898b965681b09612ff8f)
+        ;
+
+        
+    
+    
+            var circle_marker_1715d64de508d11e8a861d2c3256a80e = L.circleMarker(
+                [37.75086975097656, -122.20565795898438],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_9a557970fb9c604c95ba3b52b78e53df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e54a49ccf39100d33aad2558243b88e = $(`<div id="html_6e54a49ccf39100d33aad2558243b88e" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 SOUTHBOUND & 66TH AVENUE OVERCROSSING<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-07-14 at 142<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_9a557970fb9c604c95ba3b52b78e53df.setContent(html_6e54a49ccf39100d33aad2558243b88e);
+            
+        
+
+        circle_marker_1715d64de508d11e8a861d2c3256a80e.bindPopup(popup_9a557970fb9c604c95ba3b52b78e53df)
+        ;
+
+        
+    
+    
+            var circle_marker_f88d5aea643218fc82cc90207a1aae7e = L.circleMarker(
+                [37.703521728515625, -121.99793243408205],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_f6dc3b3a7a41e5ec1248ab889f9023b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_72261d210cbcfe243a6771e7f01c65c9 = $(`<div id="html_72261d210cbcfe243a6771e7f01c65c9" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INTERSTATE 580 WESTBOUND & EDEN CANYON ROAD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2023-08-27 at 235<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br>🚨 Hit-and-Run<br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_f6dc3b3a7a41e5ec1248ab889f9023b7.setContent(html_72261d210cbcfe243a6771e7f01c65c9);
+            
+        
+
+        circle_marker_f88d5aea643218fc82cc90207a1aae7e.bindPopup(popup_f6dc3b3a7a41e5ec1248ab889f9023b7)
+        ;
+
+        
+    
+    
+            var circle_marker_209f8d2093a7d9159166f7d6777553dc = L.circleMarker(
+                [37.82242965698242, -122.32186126708984],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_9f72e9aa4d18f7d2431adf5a6e76644e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa53d46b7bf1939617ccb0af09617c90 = $(`<div id="html_aa53d46b7bf1939617ccb0af09617c90" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-80 EASTBOUND & SAN FRANCISCO / OAKLAND BAY BRIDGE TOLL PLAZA<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-04-06 at 201<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     </div></div>`)[0];
+                popup_9f72e9aa4d18f7d2431adf5a6e76644e.setContent(html_aa53d46b7bf1939617ccb0af09617c90);
+            
+        
+
+        circle_marker_209f8d2093a7d9159166f7d6777553dc.bindPopup(popup_9f72e9aa4d18f7d2431adf5a6e76644e)
+        ;
+
+        
+    
+    
+            var circle_marker_4b31fef913ccb7273317fd3dbb53734a = L.circleMarker(
+                [37.70362854003906, -121.77279663085938],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_3a1f8d38fc3c470a0b0f516f779ffd83 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf04dc9a6b44b616752d9d44a54bc181 = $(`<div id="html_bf04dc9a6b44b616752d9d44a54bc181" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> NORTH LIVERMORE AVENUE (2200 BLOCK) & CAYETANO COURT<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2023-09-07 at 2028<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_3a1f8d38fc3c470a0b0f516f779ffd83.setContent(html_bf04dc9a6b44b616752d9d44a54bc181);
+            
+        
+
+        circle_marker_4b31fef913ccb7273317fd3dbb53734a.bindPopup(popup_3a1f8d38fc3c470a0b0f516f779ffd83)
+        ;
+
+        
+    
+    
+            var circle_marker_3eb6a82be0a87940bc7c6c759e85f985 = L.circleMarker(
+                [37.80525970458984, -122.27873992919922],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_ff480d00ab17c30d3be8a2502358ae8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b78644f3d059b1471d6cdbdb14407ce = $(`<div id="html_8b78644f3d059b1471d6cdbdb14407ce" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-980 W/B TO 12TH STREET & 12TH STREET<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-11-18 at 530<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br>🚨 Hit-and-Run<br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_ff480d00ab17c30d3be8a2502358ae8e.setContent(html_8b78644f3d059b1471d6cdbdb14407ce);
+            
+        
+
+        circle_marker_3eb6a82be0a87940bc7c6c759e85f985.bindPopup(popup_ff480d00ab17c30d3be8a2502358ae8e)
+        ;
+
+        
+    
+    
+            var circle_marker_7b196163f1a8828560fdabfb5c07d6f9 = L.circleMarker(
+                [37.72949981689453, -122.13826751708984],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_731139a7ade2d90b6a7abf9a82e3037c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_780f5af3cac4b93f71ae83e0111fffa5 = $(`<div id="html_780f5af3cac4b93f71ae83e0111fffa5" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 W/B (MACARTHUR FREEWAY) & ESTUDILLO AVENUE<br>         <b>City:</b> SAN LEANDRO<br>         <b>Date:</b> 2023-06-17 at 155<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br></div></div>`)[0];
+                popup_731139a7ade2d90b6a7abf9a82e3037c.setContent(html_780f5af3cac4b93f71ae83e0111fffa5);
+            
+        
+
+        circle_marker_7b196163f1a8828560fdabfb5c07d6f9.bindPopup(popup_731139a7ade2d90b6a7abf9a82e3037c)
+        ;
+
+        
+    
+    
+            var circle_marker_d5e1d5b664a261b6b953af9359aad1cd = L.circleMarker(
+                [37.552879333496094, -122.05059051513672],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_e8642d5ead45b89eec24c16c78354edf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_29a93288e07aa3174c0401b22abd6158 = $(`<div id="html_29a93288e07aa3174c0401b22abd6158" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> STATE ROUTE 84 SOUTHBOUND & LAKE BOULEVARD<br>         <b>City:</b> NEWARK<br>         <b>Date:</b> 2023-12-17 at 1330<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_e8642d5ead45b89eec24c16c78354edf.setContent(html_29a93288e07aa3174c0401b22abd6158);
+            
+        
+
+        circle_marker_d5e1d5b664a261b6b953af9359aad1cd.bindPopup(popup_e8642d5ead45b89eec24c16c78354edf)
+        ;
+
+        
+    
+    
+            var circle_marker_7348db32d31d110fb62af67e66dabbc3 = L.circleMarker(
+                [37.603851318359375, -122.06427001953124],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_d592bd32bb96690c1e4f8c7f2f43d549 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32e1ccfe644d0215600d06ceea19bcaa = $(`<div id="html_32e1ccfe644d0215600d06ceea19bcaa" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 NORTHBOUND & WHIPPLE ROAD<br>         <b>City:</b> UNION CITY<br>         <b>Date:</b> 2023-08-06 at 2120<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_d592bd32bb96690c1e4f8c7f2f43d549.setContent(html_32e1ccfe644d0215600d06ceea19bcaa);
+            
+        
+
+        circle_marker_7348db32d31d110fb62af67e66dabbc3.bindPopup(popup_d592bd32bb96690c1e4f8c7f2f43d549)
+        ;
+
+        
+    
+    
+            var circle_marker_bbded4a89a9019f2d6a47d3f6bd16594 = L.circleMarker(
+                [37.67483901977539, -122.11519622802734],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_69daa8d0bd1d0bda9db53c3d021321cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0cc15412edad8b2f80f03089b31bd5c1 = $(`<div id="html_0cc15412edad8b2f80f03089b31bd5c1" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 SOUTHBOUND (NIMITZ FREEWAY) & HACIENDA AVENUE<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2023-10-12 at 101<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 2<br>         • Injured: 2<br>     </div></div>`)[0];
+                popup_69daa8d0bd1d0bda9db53c3d021321cd.setContent(html_0cc15412edad8b2f80f03089b31bd5c1);
+            
+        
+
+        circle_marker_bbded4a89a9019f2d6a47d3f6bd16594.bindPopup(popup_69daa8d0bd1d0bda9db53c3d021321cd)
+        ;
+
+        
+    
+    
+            var circle_marker_fe96fd77e68cc8cbd61159b0c44e16a5 = L.circleMarker(
+                [37.477928161621094, -121.93389129638672],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_f34cf0376ddc0716a9322589b7d31883 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df41f797f3b305f4ec2d83041cc164ee = $(`<div id="html_df41f797f3b305f4ec2d83041cc164ee" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INTERSTATE 880 SOUTHBOUND & WARREN AVENUE<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2024-01-16 at 2500<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_f34cf0376ddc0716a9322589b7d31883.setContent(html_df41f797f3b305f4ec2d83041cc164ee);
+            
+        
+
+        circle_marker_fe96fd77e68cc8cbd61159b0c44e16a5.bindPopup(popup_f34cf0376ddc0716a9322589b7d31883)
+        ;
+
+        
+    
+    
+            var circle_marker_720ca1f564a8a37e518b24570f7dc313 = L.circleMarker(
+                [37.740848541259766, -121.56159210205078],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_a8e6f42836748c09e4d7430b852bdda9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d72d441c185e003044829330f8fd248f = $(`<div id="html_d72d441c185e003044829330f8fd248f" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INTERSTATE 580 EASTBOUND & INTERSTATE 205<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2024-01-27 at 1940<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_a8e6f42836748c09e4d7430b852bdda9.setContent(html_d72d441c185e003044829330f8fd248f);
+            
+        
+
+        circle_marker_720ca1f564a8a37e518b24570f7dc313.bindPopup(popup_a8e6f42836748c09e4d7430b852bdda9)
+        ;
+
+        
+    
+    
+            var circle_marker_b6fe41d964729c08f8750231f57837c5 = L.circleMarker(
+                [37.512939453125, -121.93885040283205],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_7f149cd199f0f55fd0b95c9c951be433 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13274db0315b143bcbd8df22cb748320 = $(`<div id="html_13274db0315b143bcbd8df22cb748320" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-680 SOUTHBOUND & AUTO MALL PARKWAY<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2023-10-14 at 113<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 2<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_7f149cd199f0f55fd0b95c9c951be433.setContent(html_13274db0315b143bcbd8df22cb748320);
+            
+        
+
+        circle_marker_b6fe41d964729c08f8750231f57837c5.bindPopup(popup_7f149cd199f0f55fd0b95c9c951be433)
+        ;
+
+        
+    
+    
+            var circle_marker_b0f83c126e6effad286a7fac2c063e6f = L.circleMarker(
+                [37.802101135253906, -122.23026275634766],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_d87ac261dac3fe03b548d5f544de2153 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a82de4059d2cae2e69a08e084aae10bd = $(`<div id="html_a82de4059d2cae2e69a08e084aae10bd" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 W/B (MACARTHUR FREEWAY) & 13TH AVENUE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-11-19 at 31<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 2<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br></div></div>`)[0];
+                popup_d87ac261dac3fe03b548d5f544de2153.setContent(html_a82de4059d2cae2e69a08e084aae10bd);
+            
+        
+
+        circle_marker_b0f83c126e6effad286a7fac2c063e6f.bindPopup(popup_d87ac261dac3fe03b548d5f544de2153)
+        ;
+
+        
+    
+    
+            var circle_marker_b9ee54c2a229db43f7e0383f841d537c = L.circleMarker(
+                [37.56964874267578, -122.04482269287108],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_59b881aaa2ed4cc14e69f61a38b93fce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26b7f6291fd3c13339a3ef7e65dc8f75 = $(`<div id="html_26b7f6291fd3c13339a3ef7e65dc8f75" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INTERSTATE 880 SOUTHBOUND & PASEO PADRE PARKWAY<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2024-03-23 at 2036<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_59b881aaa2ed4cc14e69f61a38b93fce.setContent(html_26b7f6291fd3c13339a3ef7e65dc8f75);
+            
+        
+
+        circle_marker_b9ee54c2a229db43f7e0383f841d537c.bindPopup(popup_59b881aaa2ed4cc14e69f61a38b93fce)
+        ;
+
+        
+    
+    
+            var circle_marker_33982e37b978b9739acc2844919dcb95 = L.circleMarker(
+                [37.70135116577149, -121.92176818847656],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_b84804bd513c3a8c84a764c01b0ab01b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc929e4913f3162a10d8acb4c71a1d4d = $(`<div id="html_cc929e4913f3162a10d8acb4c71a1d4d" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 WESTBOUND & I-680 NORTHBOUND<br>         <b>City:</b> PLEASANTON<br>         <b>Date:</b> 2023-10-23 at 2500<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_b84804bd513c3a8c84a764c01b0ab01b.setContent(html_cc929e4913f3162a10d8acb4c71a1d4d);
+            
+        
+
+        circle_marker_33982e37b978b9739acc2844919dcb95.bindPopup(popup_b84804bd513c3a8c84a764c01b0ab01b)
+        ;
+
+        
+    
+    
+            var circle_marker_b26f404d7221ceb0e0a79d9bc3b100dd = L.circleMarker(
+                [37.621219635009766, -121.87999725341795],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_9f67d514e5e7727f4e0f7236a9e7387a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53543fb92560a5d4881c0048c51035b1 = $(`<div id="html_53543fb92560a5d4881c0048c51035b1" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-680 SOUTHBOUND & KOOPMANN ROAD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2024-03-13 at 1650<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_9f67d514e5e7727f4e0f7236a9e7387a.setContent(html_53543fb92560a5d4881c0048c51035b1);
+            
+        
+
+        circle_marker_b26f404d7221ceb0e0a79d9bc3b100dd.bindPopup(popup_9f67d514e5e7727f4e0f7236a9e7387a)
+        ;
+
+        
+    
+    
+            var circle_marker_8dc1f88772bd53ec5edeb379dfd3c766 = L.circleMarker(
+                [37.68220138549805, -122.09626770019533],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_e3224b6207abd337411a4358881c8450 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0988ed7489e2ee011b0842c2e7e9395a = $(`<div id="html_0988ed7489e2ee011b0842c2e7e9395a" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> MISSION BOULEVARD(SR-185) NORTHBOUND & BLOSSOM WAY<br>         <b>City:</b> HAYWARD<br>         <b>Date:</b> 2024-02-13 at 1930<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_e3224b6207abd337411a4358881c8450.setContent(html_0988ed7489e2ee011b0842c2e7e9395a);
+            
+        
+
+        circle_marker_8dc1f88772bd53ec5edeb379dfd3c766.bindPopup(popup_e3224b6207abd337411a4358881c8450)
+        ;
+
+        
+    
+    
+            var circle_marker_8ead5decd584f9d5acda5dc4bfe685e5 = L.circleMarker(
+                [37.5620002746582, -122.03645324707033],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_6b482d59e6523d038761db94b8cbe5ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07ef1be6aa960744038a20e23d9fe312 = $(`<div id="html_07ef1be6aa960744038a20e23d9fe312" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 N/B (NIMITZ FREEWAY) & DECOTO ROAD<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2024-04-06 at 1802<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_6b482d59e6523d038761db94b8cbe5ca.setContent(html_07ef1be6aa960744038a20e23d9fe312);
+            
+        
+
+        circle_marker_8ead5decd584f9d5acda5dc4bfe685e5.bindPopup(popup_6b482d59e6523d038761db94b8cbe5ca)
+        ;
+
+        
+    
+    
+            var circle_marker_88bb928af9ad2786fe92770ec4fc3c73 = L.circleMarker(
+                [37.69493865966797, -122.10421752929688],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_26adec99601e58cd99cf0d5f4cc7c95e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f3cf901f7f86e5b9a568f089b852637 = $(`<div id="html_6f3cf901f7f86e5b9a568f089b852637" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 EASTBOUND (MACARTHUR FREEWAY) & 167TH AVENUE<br>         <b>City:</b> SAN LEANDRO<br>         <b>Date:</b> 2024-02-05 at 1805<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_26adec99601e58cd99cf0d5f4cc7c95e.setContent(html_6f3cf901f7f86e5b9a568f089b852637);
+            
+        
+
+        circle_marker_88bb928af9ad2786fe92770ec4fc3c73.bindPopup(popup_26adec99601e58cd99cf0d5f4cc7c95e)
+        ;
+
+        
+    
+    
+            var circle_marker_d4ebdf327d304040ac70536ff70c023e = L.circleMarker(
+                [37.74898910522461, -122.20372772216795],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_71641104c47bbe3d5142b345a3dfdf06 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_112ae92364d7147b510f4eec6a21daac = $(`<div id="html_112ae92364d7147b510f4eec6a21daac" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 N/B & 66TH AVE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-12-26 at 2137<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_71641104c47bbe3d5142b345a3dfdf06.setContent(html_112ae92364d7147b510f4eec6a21daac);
+            
+        
+
+        circle_marker_d4ebdf327d304040ac70536ff70c023e.bindPopup(popup_71641104c47bbe3d5142b345a3dfdf06)
+        ;
+
+        
+    
+    
+            var circle_marker_ca6b2cec48892aaea55ee953a3367503 = L.circleMarker(
+                [37.48006820678711, -121.93405151367188],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_9f16c58f8e1c1fd88c313b6ef91f9e13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9db3c6a57ba375cbb73fab4a1ae8e5db = $(`<div id="html_9db3c6a57ba375cbb73fab4a1ae8e5db" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INTERSTATE 880 N/B TO STATE ROUTE 262 & WARREN AVE<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2023-05-14 at 245<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br>🚨 Hit-and-Run<br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_9f16c58f8e1c1fd88c313b6ef91f9e13.setContent(html_9db3c6a57ba375cbb73fab4a1ae8e5db);
+            
+        
+
+        circle_marker_ca6b2cec48892aaea55ee953a3367503.bindPopup(popup_9f16c58f8e1c1fd88c313b6ef91f9e13)
+        ;
+
+        
+    
+    
+            var circle_marker_e82e5f56c884a296382f03f744a776cd = L.circleMarker(
+                [37.6999397277832, -121.78343200683594],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_1669291cfe7e0af18ee5c0246b8f9ef1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ee53b2319b5644e6f3eeb03704fe078 = $(`<div id="html_3ee53b2319b5644e6f3eeb03704fe078" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 WESTBOUND & PORTOLA AVENUE O/C<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2024-04-18 at 905<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_1669291cfe7e0af18ee5c0246b8f9ef1.setContent(html_3ee53b2319b5644e6f3eeb03704fe078);
+            
+        
+
+        circle_marker_e82e5f56c884a296382f03f744a776cd.bindPopup(popup_1669291cfe7e0af18ee5c0246b8f9ef1)
+        ;
+
+        
+    
+    
+            var circle_marker_f710e40dbf3e76923bd0261a5d2685ff = L.circleMarker(
+                [37.62644958496094, -121.88031005859376],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_74532ade8347e2c037e5f5b985a18020 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dacc1c44b08ea3f5f999f5f4a9a81025 = $(`<div id="html_dacc1c44b08ea3f5f999f5f4a9a81025" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-680 S/B & SUNOL BLVD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2023-12-18 at 1431<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 3<br>         • Injured: 5<br>     </div></div>`)[0];
+                popup_74532ade8347e2c037e5f5b985a18020.setContent(html_dacc1c44b08ea3f5f999f5f4a9a81025);
+            
+        
+
+        circle_marker_f710e40dbf3e76923bd0261a5d2685ff.bindPopup(popup_74532ade8347e2c037e5f5b985a18020)
+        ;
+
+        
+    
+    
+            var circle_marker_96cedf27fefa088740de26a941ebcc0d = L.circleMarker(
+                [37.8467903137207, -122.2981414794922],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_aca6b874cc26291d503908241773d67f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d355c604af0a752a08d6dfb5c17a8be9 = $(`<div id="html_d355c604af0a752a08d6dfb5c17a8be9" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-80 E/B & WEST ASHBY AVENUE OVERCROSSING<br>         <b>City:</b> EMERYVILLE<br>         <b>Date:</b> 2024-05-01 at 716<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_aca6b874cc26291d503908241773d67f.setContent(html_d355c604af0a752a08d6dfb5c17a8be9);
+            
+        
+
+        circle_marker_96cedf27fefa088740de26a941ebcc0d.bindPopup(popup_aca6b874cc26291d503908241773d67f)
+        ;
+
+        
+    
+    
+            var circle_marker_a63f0533cf862f2a4d08b318197e4580 = L.circleMarker(
+                [37.80904006958008, -122.1958236694336],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_db0a961264bf511f23fa11b48bd83834 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55b30edebf48ad16fc7e3aa89a17c941 = $(`<div id="html_55b30edebf48ad16fc7e3aa89a17c941" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> SR-13 S/B  (WARREN FREEWAY) & JOAQUIN MILLER ROAD OVER CROSSING<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-11-19 at 2245<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_db0a961264bf511f23fa11b48bd83834.setContent(html_55b30edebf48ad16fc7e3aa89a17c941);
+            
+        
+
+        circle_marker_a63f0533cf862f2a4d08b318197e4580.bindPopup(popup_db0a961264bf511f23fa11b48bd83834)
+        ;
+
+        
+    
+    
+            var circle_marker_cd3f10e8108c1dce6653cf4d9b5b1c2a = L.circleMarker(
+                [37.82851028442382, -122.27783966064452],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_11a0e26cacbceddf949115bc41ff123c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36759da6cc4ae1aba0de72ce10562c3b = $(`<div id="html_36759da6cc4ae1aba0de72ce10562c3b" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 E/B TO W. MACARTHUR BOULEVARD & MARKET STREET<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-02-01 at 2018<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 2<br>         • Injured: 2<br>     </div></div>`)[0];
+                popup_11a0e26cacbceddf949115bc41ff123c.setContent(html_36759da6cc4ae1aba0de72ce10562c3b);
+            
+        
+
+        circle_marker_cd3f10e8108c1dce6653cf4d9b5b1c2a.bindPopup(popup_11a0e26cacbceddf949115bc41ff123c)
+        ;
+
+        
+    
+    
+            var circle_marker_36c10f315a2a43cbe700c13655e5f94c = L.circleMarker(
+                [37.70048904418945, -121.7773895263672],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_6f2edb2fb6a222fb5cb687c016cd27e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_485ae93f3506100d22358b975467db1c = $(`<div id="html_485ae93f3506100d22358b975467db1c" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INTERSTATE 580 WESTBOUND & NORTH LIVERMORE AVENUE<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2024-06-13 at 537<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_6f2edb2fb6a222fb5cb687c016cd27e5.setContent(html_485ae93f3506100d22358b975467db1c);
+            
+        
+
+        circle_marker_36c10f315a2a43cbe700c13655e5f94c.bindPopup(popup_6f2edb2fb6a222fb5cb687c016cd27e5)
+        ;
+
+        
+    
+    
+            var circle_marker_d622f311d36655cf869ba394c9e0b384 = L.circleMarker(
+                [37.6932487487793, -122.05269622802734],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_f20450d25e5dee0f072ca6b91cc99e9f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_67c9d53528163a249443295339f4ec51 = $(`<div id="html_67c9d53528163a249443295339f4ec51" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 E/B & GROVE WAY<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2024-09-09 at 800<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 2<br>     </div></div>`)[0];
+                popup_f20450d25e5dee0f072ca6b91cc99e9f.setContent(html_67c9d53528163a249443295339f4ec51);
+            
+        
+
+        circle_marker_d622f311d36655cf869ba394c9e0b384.bindPopup(popup_f20450d25e5dee0f072ca6b91cc99e9f)
+        ;
+
+        
+    
+    
+            var circle_marker_9eb34dfe5e6badd49c02cc99feafb5cb = L.circleMarker(
+                [37.822479248046875, -122.32554626464844],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_515265e1eff16bf983722e8996e20b65 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_232bddba5828b4a41b96b89664a05722 = $(`<div id="html_232bddba5828b4a41b96b89664a05722" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-80 W/B & THE SAN FRANCISCO / OAKLAND BAY BRIDGE METER LIGHT<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2023-09-28 at 1959<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_515265e1eff16bf983722e8996e20b65.setContent(html_232bddba5828b4a41b96b89664a05722);
+            
+        
+
+        circle_marker_9eb34dfe5e6badd49c02cc99feafb5cb.bindPopup(popup_515265e1eff16bf983722e8996e20b65)
+        ;
+
+        
+    
+    
+            var circle_marker_e3e677b55ea084b70c5cb4c94bfe12d0 = L.circleMarker(
+                [37.86029815673828, -122.30213928222656],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_a42e8294ec196e1e1a04c63edc6745c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d6f5c328c12f497e53df585972dc80f2 = $(`<div id="html_d6f5c328c12f497e53df585972dc80f2" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-80 W/B & UNIVERSITY AVE<br>         <b>City:</b> BERKELEY<br>         <b>Date:</b> 2024-08-01 at 340<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_a42e8294ec196e1e1a04c63edc6745c0.setContent(html_d6f5c328c12f497e53df585972dc80f2);
+            
+        
+
+        circle_marker_e3e677b55ea084b70c5cb4c94bfe12d0.bindPopup(popup_a42e8294ec196e1e1a04c63edc6745c0)
+        ;
+
+        
+    
+    
+            var circle_marker_f0a183385d32836d0ae8ccb8de2549a2 = L.circleMarker(
+                [37.81153869628906, -122.25022888183594],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_6330a006e8a63176758898a756c7f594 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f8ca35ad2ed375996a78f51f2429cc74 = $(`<div id="html_f8ca35ad2ed375996a78f51f2429cc74" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 E/B & VAN BUREN / SANTA CLARA PEDESTRIAN OVERCROSSING<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-05-17 at 10<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 2<br>     </div></div>`)[0];
+                popup_6330a006e8a63176758898a756c7f594.setContent(html_f8ca35ad2ed375996a78f51f2429cc74);
+            
+        
+
+        circle_marker_f0a183385d32836d0ae8ccb8de2549a2.bindPopup(popup_6330a006e8a63176758898a756c7f594)
+        ;
+
+        
+    
+    
+            var circle_marker_3e13c3b0807423de066794f5696bedc8 = L.circleMarker(
+                [37.78385162353515, -122.18267059326172],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_eee40ef7f6efd9416e25a9bdfdcc9d83 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3f28bcbbe88c74e9d418f955e0ab9ba = $(`<div id="html_a3f28bcbbe88c74e9d418f955e0ab9ba" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INTERSTATE 580 EASTBOUND & STATE ROUTE 13 OVERCROSSING<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-09-10 at 1255<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_eee40ef7f6efd9416e25a9bdfdcc9d83.setContent(html_a3f28bcbbe88c74e9d418f955e0ab9ba);
+            
+        
+
+        circle_marker_3e13c3b0807423de066794f5696bedc8.bindPopup(popup_eee40ef7f6efd9416e25a9bdfdcc9d83)
+        ;
+
+        
+    
+    
+            var circle_marker_e6b667bd30a09ffd5445ccb533e0e402 = L.circleMarker(
+                [37.56774139404297, -121.89640808105467],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_f1ec631f27e47ae64f1e9c0d5709a59d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97eac4636db36c7409025f14227f5035 = $(`<div id="html_97eac4636db36c7409025f14227f5035" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INTERSTATE 680 NORTHBOUND & SHERIDAN ROAD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2024-08-20 at 630<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_f1ec631f27e47ae64f1e9c0d5709a59d.setContent(html_97eac4636db36c7409025f14227f5035);
+            
+        
+
+        circle_marker_e6b667bd30a09ffd5445ccb533e0e402.bindPopup(popup_f1ec631f27e47ae64f1e9c0d5709a59d)
+        ;
+
+        
+    
+    
+            var circle_marker_d10efafab71f65e68d8e880b89f1b1ea = L.circleMarker(
+                [37.6131591796875, -121.87539672851562],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_b4f06975e0b598f522d3a5a21245a398 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f37e1a6b6dcc222946bfb387506b3e82 = $(`<div id="html_f37e1a6b6dcc222946bfb387506b3e82" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-680 NORTHBOUND & KOOPMANN RD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2024-08-31 at 925<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_b4f06975e0b598f522d3a5a21245a398.setContent(html_f37e1a6b6dcc222946bfb387506b3e82);
+            
+        
+
+        circle_marker_d10efafab71f65e68d8e880b89f1b1ea.bindPopup(popup_b4f06975e0b598f522d3a5a21245a398)
+        ;
+
+        
+    
+    
+            var circle_marker_d31943c9eed2086e3c0bb8c5b6b36ef3 = L.circleMarker(
+                [37.507450103759766, -121.93588256835938],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_eed8fecb4c68c218aa943952eeab7f5a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dda214e709b9d8a6884b06d4019df074 = $(`<div id="html_dda214e709b9d8a6884b06d4019df074" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-680 SOUTHBOUND & AUTO MALL PARKWAY<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2024-07-18 at 702<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     </div></div>`)[0];
+                popup_eed8fecb4c68c218aa943952eeab7f5a.setContent(html_dda214e709b9d8a6884b06d4019df074);
+            
+        
+
+        circle_marker_d31943c9eed2086e3c0bb8c5b6b36ef3.bindPopup(popup_eed8fecb4c68c218aa943952eeab7f5a)
+        ;
+
+        
+    
+    
+            var circle_marker_aace7321a771e6d5d6e3f8c2e7699080 = L.circleMarker(
+                [37.636138916015625, -122.101318359375],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_971e0fb851af35b096004c3b92aaeda5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e166a200efa3baf2fd8cbf74d2d7c99c = $(`<div id="html_e166a200efa3baf2fd8cbf74d2d7c99c" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> SR-92 W/B TO HESPERIAN BOULEVARD & HESPERIAN BOULEVARD<br>         <b>City:</b> HAYWARD<br>         <b>Date:</b> 2024-07-28 at 2355<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_971e0fb851af35b096004c3b92aaeda5.setContent(html_e166a200efa3baf2fd8cbf74d2d7c99c);
+            
+        
+
+        circle_marker_aace7321a771e6d5d6e3f8c2e7699080.bindPopup(popup_971e0fb851af35b096004c3b92aaeda5)
+        ;
+
+        
+    
+    
+            var circle_marker_bbf532d3cecd2d7bbc5e091e546b14bf = L.circleMarker(
+                [37.68663024902344, -122.1325912475586],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_b082aaead6866b836cf96fa5fb0c3b0c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de28ea2d5a3968d505719396eac15968 = $(`<div id="html_de28ea2d5a3968d505719396eac15968" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> LEWELLING BOULEVARD & EMBERS WAY<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2024-05-15 at 2118<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_b082aaead6866b836cf96fa5fb0c3b0c.setContent(html_de28ea2d5a3968d505719396eac15968);
+            
+        
+
+        circle_marker_bbf532d3cecd2d7bbc5e091e546b14bf.bindPopup(popup_b082aaead6866b836cf96fa5fb0c3b0c)
+        ;
+
+        
+    
+    
+            var circle_marker_17feb7c57cedbf841ee3227039e37544 = L.circleMarker(
+                [37.64937973022461, -121.9764404296875],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_9e26f9a45d28a46671eafd41bff03b6b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f34735dab9ff0e2cc067ca302d6fe5f6 = $(`<div id="html_f34735dab9ff0e2cc067ca302d6fe5f6" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> PALOMARES ROAD & PALO VERDRE ROAD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2024-04-29 at 1615<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     </div></div>`)[0];
+                popup_9e26f9a45d28a46671eafd41bff03b6b.setContent(html_f34735dab9ff0e2cc067ca302d6fe5f6);
+            
+        
+
+        circle_marker_17feb7c57cedbf841ee3227039e37544.bindPopup(popup_9e26f9a45d28a46671eafd41bff03b6b)
+        ;
+
+        
+    
+    
+            var circle_marker_50b411be0a1c988eed776faf2a9db768 = L.circleMarker(
+                [37.60567855834961, -122.06581115722656],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_d85f2a6cee2dd21320ad05400fe7b68d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c3eacea90d8ac54c5c28a15762a690e = $(`<div id="html_6c3eacea90d8ac54c5c28a15762a690e" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 N/B & WHIPPLE ROAD<br>         <b>City:</b> HAYWARD<br>         <b>Date:</b> 2024-05-09 at 1132<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     </div></div>`)[0];
+                popup_d85f2a6cee2dd21320ad05400fe7b68d.setContent(html_6c3eacea90d8ac54c5c28a15762a690e);
+            
+        
+
+        circle_marker_50b411be0a1c988eed776faf2a9db768.bindPopup(popup_d85f2a6cee2dd21320ad05400fe7b68d)
+        ;
+
+        
+    
+    
+            var circle_marker_ecbf050f010fb8897cd4b6d1ffe63c45 = L.circleMarker(
+                [37.82252883911133, -122.32037353515624],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_c3de776ad052938fdd2395ed8506ca14 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4515711415923f69a0e85af5c531ab4 = $(`<div id="html_d4515711415923f69a0e85af5c531ab4" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INTERSTATE 80 EASTBOUND & NORTHGATE RD<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-08-05 at 1315<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_c3de776ad052938fdd2395ed8506ca14.setContent(html_d4515711415923f69a0e85af5c531ab4);
+            
+        
+
+        circle_marker_ecbf050f010fb8897cd4b6d1ffe63c45.bindPopup(popup_c3de776ad052938fdd2395ed8506ca14)
+        ;
+
+        
+    
+    
+            var circle_marker_4b5d405fa3674353a2cb57f8238230c9 = L.circleMarker(
+                [37.670528411865234, -122.12106323242188],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_94053cc749cc1143bf7ac606d0262c62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3bfc2854623018dc105ef0482dcfb796 = $(`<div id="html_3bfc2854623018dc105ef0482dcfb796" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> HESPERIAN BOULEVARD NORTHBOUND & BOCKMAN ROAD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2023-11-19 at 850<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_94053cc749cc1143bf7ac606d0262c62.setContent(html_3bfc2854623018dc105ef0482dcfb796);
+            
+        
+
+        circle_marker_4b5d405fa3674353a2cb57f8238230c9.bindPopup(popup_94053cc749cc1143bf7ac606d0262c62)
+        ;
+
+        
+    
+    
+            var circle_marker_af13dd46ff81761c7ad5c721694bc151 = L.circleMarker(
+                [37.64738082885742, -122.09561920166016],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_b225490c94acec77d0872401684aa442 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ea2f58e06efc2d7e54a41e6a0891627 = $(`<div id="html_2ea2f58e06efc2d7e54a41e6a0891627" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INTERSTATE 880 NORTHBOUND & STATE ROUTE 92<br>         <b>City:</b> HAYWARD<br>         <b>Date:</b> 2023-06-10 at 405<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 2<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_b225490c94acec77d0872401684aa442.setContent(html_2ea2f58e06efc2d7e54a41e6a0891627);
+            
+        
+
+        circle_marker_af13dd46ff81761c7ad5c721694bc151.bindPopup(popup_b225490c94acec77d0872401684aa442)
+        ;
+
+        
+    
+    
+            var circle_marker_da2c11920331c24ffc917168f122427e = L.circleMarker(
+                [37.76189041137695, -122.14922332763672],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_39f35f625bd8e6a42ae25f4bbae54bdd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d36454c901451ae04ba3d26ecefa23f = $(`<div id="html_0d36454c901451ae04ba3d26ecefa23f" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 E/B & KELLER AVE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-04-14 at 335<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br></div></div>`)[0];
+                popup_39f35f625bd8e6a42ae25f4bbae54bdd.setContent(html_0d36454c901451ae04ba3d26ecefa23f);
+            
+        
+
+        circle_marker_da2c11920331c24ffc917168f122427e.bindPopup(popup_39f35f625bd8e6a42ae25f4bbae54bdd)
+        ;
+
+        
+    
+    
+            var circle_marker_3b96f337d5f3e0cb7e537604bfeac0ec = L.circleMarker(
+                [37.65496826171875, -121.72486877441406],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_87c77a1eee55337d7b125c656a0a5acd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c92806ce38a05c39dca723eda4f8e09 = $(`<div id="html_8c92806ce38a05c39dca723eda4f8e09" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> MINES ROAD (3000 BLOCK) & TESLA ROAD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2024-11-28 at 1126<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_87c77a1eee55337d7b125c656a0a5acd.setContent(html_8c92806ce38a05c39dca723eda4f8e09);
+            
+        
+
+        circle_marker_3b96f337d5f3e0cb7e537604bfeac0ec.bindPopup(popup_87c77a1eee55337d7b125c656a0a5acd)
+        ;
+
+        
+    
+    
+            var circle_marker_259f5171190eb936d30fb4e52b971a07 = L.circleMarker(
+                [37.729610443115234, -121.63346862792967],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_346dc4de25cb11f93d9a75e4332037e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_50db2cfcc5633c3712abfed4fc9ebd12 = $(`<div id="html_50db2cfcc5633c3712abfed4fc9ebd12" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 EASTBOUND & UNION PACIFIC RAILROAD OVERCROSSING (STONECUT)<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2024-11-06 at 1940<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br></div></div>`)[0];
+                popup_346dc4de25cb11f93d9a75e4332037e0.setContent(html_50db2cfcc5633c3712abfed4fc9ebd12);
+            
+        
+
+        circle_marker_259f5171190eb936d30fb4e52b971a07.bindPopup(popup_346dc4de25cb11f93d9a75e4332037e0)
+        ;
+
+        
+    
+    
+            var circle_marker_9e38186a29b920244c8977ce6437ea54 = L.circleMarker(
+                [37.702438354492195, -121.7504425048828],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_979ec11ece122016c0a1e934cbe1f0d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_090bc51a4124b31250bfe300b235a3aa = $(`<div id="html_090bc51a4124b31250bfe300b235a3aa" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 EASTBOUND & FIRST STREET<br>         <b>City:</b> LIVERMORE<br>         <b>Date:</b> 2024-09-21 at 2010<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br></div></div>`)[0];
+                popup_979ec11ece122016c0a1e934cbe1f0d1.setContent(html_090bc51a4124b31250bfe300b235a3aa);
+            
+        
+
+        circle_marker_9e38186a29b920244c8977ce6437ea54.bindPopup(popup_979ec11ece122016c0a1e934cbe1f0d1)
+        ;
+
+        
+    
+    
+            var circle_marker_efdfcbb43942f81e1af73934cbc1ef7a = L.circleMarker(
+                [37.8249397277832, -122.27187347412108],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_d6012619bd0c103d6d56cc00202eeb00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_504be9ca0289bb3e8ab5569f15863a1d = $(`<div id="html_504be9ca0289bb3e8ab5569f15863a1d" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 E/B & WEST STREET<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-10-26 at 1513<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_d6012619bd0c103d6d56cc00202eeb00.setContent(html_504be9ca0289bb3e8ab5569f15863a1d);
+            
+        
+
+        circle_marker_efdfcbb43942f81e1af73934cbc1ef7a.bindPopup(popup_d6012619bd0c103d6d56cc00202eeb00)
+        ;
+
+        
+    
+    
+            var circle_marker_600546c0f348ceee23ab55e63c3b64ef = L.circleMarker(
+                [37.785438537597656, -122.24365997314452],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_a189fcc58e59dac11776441691f03279 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f30d6b66a3afadb830056e151ecf0754 = $(`<div id="html_f30d6b66a3afadb830056e151ecf0754" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 N/B (NIMITZ FREEWAY) & 16TH AVENUE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-09-01 at 534<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_a189fcc58e59dac11776441691f03279.setContent(html_f30d6b66a3afadb830056e151ecf0754);
+            
+        
+
+        circle_marker_600546c0f348ceee23ab55e63c3b64ef.bindPopup(popup_a189fcc58e59dac11776441691f03279)
+        ;
+
+        
+    
+    
+            var circle_marker_a1b29be483529f921bffcee762aad49d = L.circleMarker(
+                [37.79460906982422, -122.20677185058594],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_f92efb6956bca5a3930115f97770c558 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89e592c4a4d073f18a0fd84a2f3bfddb = $(`<div id="html_89e592c4a4d073f18a0fd84a2f3bfddb" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 E/B & 35TH AVE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-07-06 at 330<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_f92efb6956bca5a3930115f97770c558.setContent(html_89e592c4a4d073f18a0fd84a2f3bfddb);
+            
+        
+
+        circle_marker_a1b29be483529f921bffcee762aad49d.bindPopup(popup_f92efb6956bca5a3930115f97770c558)
+        ;
+
+        
+    
+    
+            var circle_marker_1191ae5f67ac1f415ba8c0076d326d53 = L.circleMarker(
+                [37.80226135253906, -122.23052978515624],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_f05ef83a0a1969120adcd04711c04a15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30661915ae4353797a353006a71d093f = $(`<div id="html_30661915ae4353797a353006a71d093f" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 W/B (MACARTHUR FREEWAY) & 13TH AVENUE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-09-27 at 1730<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     </div></div>`)[0];
+                popup_f05ef83a0a1969120adcd04711c04a15.setContent(html_30661915ae4353797a353006a71d093f);
+            
+        
+
+        circle_marker_1191ae5f67ac1f415ba8c0076d326d53.bindPopup(popup_f05ef83a0a1969120adcd04711c04a15)
+        ;
+
+        
+    
+    
+            var circle_marker_8191215aac22bc9346d6db6d3190c756 = L.circleMarker(
+                [37.74900817871094, -122.15062713623048],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_7b4993bcae79b768e258c5e6c4a161c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d035bb8b94887a67a3a24d8a48a660ae = $(`<div id="html_d035bb8b94887a67a3a24d8a48a660ae" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 W/B & 106TH AVENUE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-08-29 at 2327<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_7b4993bcae79b768e258c5e6c4a161c2.setContent(html_d035bb8b94887a67a3a24d8a48a660ae);
+            
+        
+
+        circle_marker_8191215aac22bc9346d6db6d3190c756.bindPopup(popup_7b4993bcae79b768e258c5e6c4a161c2)
+        ;
+
+        
+    
+    
+            var circle_marker_a96c8a9426263d4f5dbd4cf35e789fec = L.circleMarker(
+                [37.74042892456055, -122.19618988037108],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_480bf9812f1d2f467f7a044636690643 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ae50e84bac2b4f6fd8c6deb1191af9e = $(`<div id="html_1ae50e84bac2b4f6fd8c6deb1191af9e" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 NORTHBOUND & 66TH AVE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-09-01 at 2250<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_480bf9812f1d2f467f7a044636690643.setContent(html_1ae50e84bac2b4f6fd8c6deb1191af9e);
+            
+        
+
+        circle_marker_a96c8a9426263d4f5dbd4cf35e789fec.bindPopup(popup_480bf9812f1d2f467f7a044636690643)
+        ;
+
+        
+    
+    
+            var circle_marker_511ec06fd9e4556059fb2ff334bf6107 = L.circleMarker(
+                [37.55233001708984, -122.05171966552734],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_3dfcaa0af06fda62bda1c3f013314b8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44f8a237478c1fb8cc589d705be43935 = $(`<div id="html_44f8a237478c1fb8cc589d705be43935" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> SR-84 SOUTHBOUND & ARDENWOOD BOULEVARD<br>         <b>City:</b> NEWARK<br>         <b>Date:</b> 2024-10-06 at 535<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_3dfcaa0af06fda62bda1c3f013314b8e.setContent(html_44f8a237478c1fb8cc589d705be43935);
+            
+        
+
+        circle_marker_511ec06fd9e4556059fb2ff334bf6107.bindPopup(popup_3dfcaa0af06fda62bda1c3f013314b8e)
+        ;
+
+        
+    
+    
+            var circle_marker_f9c159afe6bb5543e0e13ff29d5ba9e1 = L.circleMarker(
+                [37.81549072265625, -122.29995727539062],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_11a2cc4387c42445e35bd09ee14a17e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5697765e9d49a0b2c30b018c6f4eab45 = $(`<div id="html_5697765e9d49a0b2c30b018c6f4eab45" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-80 E/B TO I-880 S/B & WEST GRAND AVENUE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-04-30 at 720<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_11a2cc4387c42445e35bd09ee14a17e4.setContent(html_5697765e9d49a0b2c30b018c6f4eab45);
+            
+        
+
+        circle_marker_f9c159afe6bb5543e0e13ff29d5ba9e1.bindPopup(popup_11a2cc4387c42445e35bd09ee14a17e4)
+        ;
+
+        
+    
+    
+            var circle_marker_796e0646c4ceb6c508c9e438b4db9842 = L.circleMarker(
+                [37.82770156860352, -122.29193115234376],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_bf06847ac02fc94bc20806d49cc3599e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb8c61b2d2734c708c4ed178257e58de = $(`<div id="html_eb8c61b2d2734c708c4ed178257e58de" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 W/B TO I-80 W/B & I-880 N/B TO I-80 E/B O/C<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-03-19 at 429<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 3<br>     </div></div>`)[0];
+                popup_bf06847ac02fc94bc20806d49cc3599e.setContent(html_eb8c61b2d2734c708c4ed178257e58de);
+            
+        
+
+        circle_marker_796e0646c4ceb6c508c9e438b4db9842.bindPopup(popup_bf06847ac02fc94bc20806d49cc3599e)
+        ;
+
+        
+    
+    
+            var circle_marker_3f7eaaa638f5be41060ccb9c951d4647 = L.circleMarker(
+                [37.788089752197266, -122.19911193847656],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_efb4dd0cade620150ded0e2f0efa13f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe1d676bc9326f80b99981b0059774d1 = $(`<div id="html_fe1d676bc9326f80b99981b0059774d1" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 E/B & 38TH AVE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-10-15 at 2250<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_efb4dd0cade620150ded0e2f0efa13f9.setContent(html_fe1d676bc9326f80b99981b0059774d1);
+            
+        
+
+        circle_marker_3f7eaaa638f5be41060ccb9c951d4647.bindPopup(popup_efb4dd0cade620150ded0e2f0efa13f9)
+        ;
+
+        
+    
+    
+            var circle_marker_bc6b1166f8b37453daf338a80ba3417e = L.circleMarker(
+                [37.80952072143555, -122.30442810058594],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_cff9bc01005b5ccda1fc53ab76210e9d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f97ef283a091a37d13a4557819a2423 = $(`<div id="html_0f97ef283a091a37d13a4557819a2423" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 N/B & 7TH ST<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2024-10-25 at 2019<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚲 Bicycle<br></div></div>`)[0];
+                popup_cff9bc01005b5ccda1fc53ab76210e9d.setContent(html_0f97ef283a091a37d13a4557819a2423);
+            
+        
+
+        circle_marker_bc6b1166f8b37453daf338a80ba3417e.bindPopup(popup_cff9bc01005b5ccda1fc53ab76210e9d)
+        ;
+
+        
+    
+    
+            var circle_marker_554418b4e4b2e2226134203182876470 = L.circleMarker(
+                [37.8177604675293, -122.22357177734376],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_9c89798e8ee4558e2de421a3ed35693d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6cea807cd67c2ac8a9d9112799cb100 = $(`<div id="html_a6cea807cd67c2ac8a9d9112799cb100" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> HAMPTON ROAD (100 BLOCK) & KING AVENUE<br>         <b>City:</b> PIEDMONT<br>         <b>Date:</b> 2024-11-27 at 307<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 3<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_9c89798e8ee4558e2de421a3ed35693d.setContent(html_a6cea807cd67c2ac8a9d9112799cb100);
+            
+        
+
+        circle_marker_554418b4e4b2e2226134203182876470.bindPopup(popup_9c89798e8ee4558e2de421a3ed35693d)
+        ;
+
+        
+    
+    
+            var circle_marker_cb59af7b45571dc07802f04f0e5b84ab = L.circleMarker(
+                [37.508159637451165, -121.96927642822266],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_63301018545f798ff28767c261b19588 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c070e79979cbd820e26a01f56aa2b98 = $(`<div id="html_1c070e79979cbd820e26a01f56aa2b98" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 S/B TO AUTOMALL PARKWAY & AUTOMALL PARKWAY<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2024-11-10 at 736<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_63301018545f798ff28767c261b19588.setContent(html_1c070e79979cbd820e26a01f56aa2b98);
+            
+        
+
+        circle_marker_cb59af7b45571dc07802f04f0e5b84ab.bindPopup(popup_63301018545f798ff28767c261b19588)
+        ;
+
+        
+    
+    
+            var circle_marker_a1e2415420c4b3ff514a87e742741fda = L.circleMarker(
+                [37.487979888916016, -121.94216918945312],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_96caa514c67798278a28fb551620517c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff7d5b92c78866d4d1cf98d39048ae6c = $(`<div id="html_ff7d5b92c78866d4d1cf98d39048ae6c" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 N/B & S. FREMONT BLVD<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2024-06-12 at 2215<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_96caa514c67798278a28fb551620517c.setContent(html_ff7d5b92c78866d4d1cf98d39048ae6c);
+            
+        
+
+        circle_marker_a1e2415420c4b3ff514a87e742741fda.bindPopup(popup_96caa514c67798278a28fb551620517c)
+        ;
+
+        
+    
+    
+            var circle_marker_0b8490d1a1fa4bf5d1a610d2e77fc1ac = L.circleMarker(
+                [37.483280181884766, -121.93634033203124],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_7d917e8e434409db819ba2c806e27640 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5025e2bc8abeb1df0b7ac1ed65ad62b = $(`<div id="html_a5025e2bc8abeb1df0b7ac1ed65ad62b" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INTERSTATE 880 NORTHBOUND & WARREN AVENUE<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2024-08-18 at 545<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 3<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_7d917e8e434409db819ba2c806e27640.setContent(html_a5025e2bc8abeb1df0b7ac1ed65ad62b);
+            
+        
+
+        circle_marker_0b8490d1a1fa4bf5d1a610d2e77fc1ac.bindPopup(popup_7d917e8e434409db819ba2c806e27640)
+        ;
+
+        
+    
+    
+            var circle_marker_826fd6503cf4ef81253131a4fa138b69 = L.circleMarker(
+                [37.55149841308594, -122.02674865722656],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_4934ca05d1124b8b7d155a8d591afd07 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62af9968a07c8d24bd986231de77b85b = $(`<div id="html_62af9968a07c8d24bd986231de77b85b" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 SOUTHBOUND & THORNTON AVENUE<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2025-01-02 at 2348<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_4934ca05d1124b8b7d155a8d591afd07.setContent(html_62af9968a07c8d24bd986231de77b85b);
+            
+        
+
+        circle_marker_826fd6503cf4ef81253131a4fa138b69.bindPopup(popup_4934ca05d1124b8b7d155a8d591afd07)
+        ;
+
+        
+    
+    
+            var circle_marker_fc0a67b5d2cd7780e98186d8c8c7ed7d = L.circleMarker(
+                [37.688079833984375, -122.09588623046876],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_66a4da0dbe4b441296e664a62bea4d5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6fe716c825b1a63e8b10f36876bd783 = $(`<div id="html_b6fe716c825b1a63e8b10f36876bd783" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> SR-238 N/B (FOOTHILL BOULEVARD) TO CASTRO VALLEY B & CASTRO VALLEY BLVD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2024-05-22 at 2340<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_66a4da0dbe4b441296e664a62bea4d5c.setContent(html_b6fe716c825b1a63e8b10f36876bd783);
+            
+        
+
+        circle_marker_fc0a67b5d2cd7780e98186d8c8c7ed7d.bindPopup(popup_66a4da0dbe4b441296e664a62bea4d5c)
+        ;
+
+        
+    
+    
+            var circle_marker_9679f4524d54314c98c844713373da1d = L.circleMarker(
+                [37.69281005859375, -122.061279296875],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_1e066d2ccc642681bf68bcc6efc08d39 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5611576db9eb425d8b05887714595023 = $(`<div id="html_5611576db9eb425d8b05887714595023" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 EASTBOUND & CENTER STREET<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2024-09-15 at 908<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_1e066d2ccc642681bf68bcc6efc08d39.setContent(html_5611576db9eb425d8b05887714595023);
+            
+        
+
+        circle_marker_9679f4524d54314c98c844713373da1d.bindPopup(popup_1e066d2ccc642681bf68bcc6efc08d39)
+        ;
+
+        
+    
+    
+            var circle_marker_d02aa11106c7f2eca6ac6f97be4bf1a3 = L.circleMarker(
+                [37.66365814208984, -122.10587310791016],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_3e319fb9c37bdb9cee9581e6b6355220 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23426e39ccfa7ea689ab35faa84f161b = $(`<div id="html_23426e39ccfa7ea689ab35faa84f161b" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 NORTHBOUND & A" STREET"<br>         <b>City:</b> HAYWARD<br>         <b>Date:</b> 2023-11-16 at 2140<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 4<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br></div></div>`)[0];
+                popup_3e319fb9c37bdb9cee9581e6b6355220.setContent(html_23426e39ccfa7ea689ab35faa84f161b);
+            
+        
+
+        circle_marker_d02aa11106c7f2eca6ac6f97be4bf1a3.bindPopup(popup_3e319fb9c37bdb9cee9581e6b6355220)
+        ;
+
+        
+    
+    
+            var circle_marker_4e2c5dd981aa3b5618db0ba52b208e5b = L.circleMarker(
+                [37.75563049316406, -121.77913665771484],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_12cd3f335b51c5011b31ddb964f8f88d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99efdb3d588b16ff5dd6ec6baece0000 = $(`<div id="html_99efdb3d588b16ff5dd6ec6baece0000" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> MORGAN TERRITORY ROAD (BLOCK 6700-7008) & MANNING ROAD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2025-02-04 at 1410<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_12cd3f335b51c5011b31ddb964f8f88d.setContent(html_99efdb3d588b16ff5dd6ec6baece0000);
+            
+        
+
+        circle_marker_4e2c5dd981aa3b5618db0ba52b208e5b.bindPopup(popup_12cd3f335b51c5011b31ddb964f8f88d)
+        ;
+
+        
+    
+    
+            var circle_marker_1c21b93980f3c61aadc3317b12f1a087 = L.circleMarker(
+                [37.58401870727539, -121.68913269042967],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_d58371f20891f2875eb74917862429b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65764e7c81a9d4da94a50f4172de75cd = $(`<div id="html_65764e7c81a9d4da94a50f4172de75cd" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> DEL VALLE ROAD (7000 BLOCK) & MENDENHALL ROAD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2025-01-04 at 1732<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_d58371f20891f2875eb74917862429b6.setContent(html_65764e7c81a9d4da94a50f4172de75cd);
+            
+        
+
+        circle_marker_1c21b93980f3c61aadc3317b12f1a087.bindPopup(popup_d58371f20891f2875eb74917862429b6)
+        ;
+
+        
+    
+    
+            var circle_marker_00943fc503fafa487680bfd108df2208 = L.circleMarker(
+                [37.539260864257805, -122.01738739013672],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_89faaf061b88445fdf97effb37ba60bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36339603d3836d07297eb57d12afbfa8 = $(`<div id="html_36339603d3836d07297eb57d12afbfa8" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 S/B & NORTH EDGE OF CENTRAL AVENUE OVERCROSSING<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2025-01-26 at 132<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 2<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_89faaf061b88445fdf97effb37ba60bc.setContent(html_36339603d3836d07297eb57d12afbfa8);
+            
+        
+
+        circle_marker_00943fc503fafa487680bfd108df2208.bindPopup(popup_89faaf061b88445fdf97effb37ba60bc)
+        ;
+
+        
+    
+    
+            var circle_marker_5369d3065acb591fc8ad2db530e2aa85 = L.circleMarker(
+                [37.61616134643555, -122.07318878173828],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_acc0bb494a14284a2896a960e8b985a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2973cb1358bacd0c9c9bbc6c90e281e8 = $(`<div id="html_2973cb1358bacd0c9c9bbc6c90e281e8" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 N/B & INDUSTRIAL PARKWAY<br>         <b>City:</b> HAYWARD<br>         <b>Date:</b> 2025-02-02 at 146<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_acc0bb494a14284a2896a960e8b985a3.setContent(html_2973cb1358bacd0c9c9bbc6c90e281e8);
+            
+        
+
+        circle_marker_5369d3065acb591fc8ad2db530e2aa85.bindPopup(popup_acc0bb494a14284a2896a960e8b985a3)
+        ;
+
+        
+    
+    
+            var circle_marker_0d5994035407d189b38364ee07caaf97 = L.circleMarker(
+                [37.46677017211914, -121.90608215332033],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_cb6dcaf55c7d373fc52463b03a8af87f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7eb94938d33da774786803764c77f2e1 = $(`<div id="html_7eb94938d33da774786803764c77f2e1" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-680 SOUTHBOUND & SCOTT CREEK ROAD<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2025-02-22 at 218<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 2<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_cb6dcaf55c7d373fc52463b03a8af87f.setContent(html_7eb94938d33da774786803764c77f2e1);
+            
+        
+
+        circle_marker_0d5994035407d189b38364ee07caaf97.bindPopup(popup_cb6dcaf55c7d373fc52463b03a8af87f)
+        ;
+
+        
+    
+    
+            var circle_marker_42eb6b9628ee47ebed4e39321339b726 = L.circleMarker(
+                [37.68667984008789, -122.130126953125],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_6f03625a8dce9c6d03f3baf8ceab4d40 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e49f1f8c87343d01f44bd961f7655dd4 = $(`<div id="html_e49f1f8c87343d01f44bd961f7655dd4" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> HESPERIAN BOULEVARD & LEWELLING BOULEVARD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2024-12-07 at 27<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br>🚨 Hit-and-Run<br>🚲 Bicycle<br></div></div>`)[0];
+                popup_6f03625a8dce9c6d03f3baf8ceab4d40.setContent(html_e49f1f8c87343d01f44bd961f7655dd4);
+            
+        
+
+        circle_marker_42eb6b9628ee47ebed4e39321339b726.bindPopup(popup_6f03625a8dce9c6d03f3baf8ceab4d40)
+        ;
+
+        
+    
+    
+            var circle_marker_dbe9ce40e9ee589700461d36ba303410 = L.circleMarker(
+                [37.52164840698242, -121.9850616455078],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_01bc1e0978b2343bbb39f1832d49a3d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_67ecf98bf378904e8edd3290d8071a0c = $(`<div id="html_67ecf98bf378904e8edd3290d8071a0c" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 NORTHBOUND & STEVENSON BOULEVARD<br>         <b>City:</b> FREMONT<br>         <b>Date:</b> 2024-05-11 at 2500<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br></div></div>`)[0];
+                popup_01bc1e0978b2343bbb39f1832d49a3d7.setContent(html_67ecf98bf378904e8edd3290d8071a0c);
+            
+        
+
+        circle_marker_dbe9ce40e9ee589700461d36ba303410.bindPopup(popup_01bc1e0978b2343bbb39f1832d49a3d7)
+        ;
+
+        
+    
+    
+            var circle_marker_824f4e61c7f07a37b7d710bb6e7224b6 = L.circleMarker(
+                [37.68843078613281, -122.1044692993164],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_fc65b0d362b28c14a44dd5b33e354f80 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47f3a55e219e44bf5075e2cdff99dc71 = $(`<div id="html_47f3a55e219e44bf5075e2cdff99dc71" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> STATE ROUTE 185 (MISSION BOULEVARD) N/B & LEWELLNG BOULEVARD<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2024-11-16 at 2143<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_fc65b0d362b28c14a44dd5b33e354f80.setContent(html_47f3a55e219e44bf5075e2cdff99dc71);
+            
+        
+
+        circle_marker_824f4e61c7f07a37b7d710bb6e7224b6.bindPopup(popup_fc65b0d362b28c14a44dd5b33e354f80)
+        ;
+
+        
+    
+    
+            var circle_marker_1d17113027752c47113c981214efec38 = L.circleMarker(
+                [37.82315826416016, -122.31706237792967],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_3a9fddf7abb97048d825d5c7b155d155 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45f114efae0882b63685cb8c3fe6e2b8 = $(`<div id="html_45f114efae0882b63685cb8c3fe6e2b8" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-80 E/B & SFOBB TOLL PLAZA<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2025-02-28 at 1409<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_3a9fddf7abb97048d825d5c7b155d155.setContent(html_45f114efae0882b63685cb8c3fe6e2b8);
+            
+        
+
+        circle_marker_1d17113027752c47113c981214efec38.bindPopup(popup_3a9fddf7abb97048d825d5c7b155d155)
+        ;
+
+        
+    
+    
+            var circle_marker_09007aa1602df73ba5afe30b9f3d8d0e = L.circleMarker(
+                [37.74895095825195, -122.20378112792967],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_77f5571adcc7b9322aef251023fc9df6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c162925784e1724a98cbef23e82c40f0 = $(`<div id="html_c162925784e1724a98cbef23e82c40f0" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 S/B & 66TH AVE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2025-05-11 at 1641<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_77f5571adcc7b9322aef251023fc9df6.setContent(html_c162925784e1724a98cbef23e82c40f0);
+            
+        
+
+        circle_marker_09007aa1602df73ba5afe30b9f3d8d0e.bindPopup(popup_77f5571adcc7b9322aef251023fc9df6)
+        ;
+
+        
+    
+    
+            var circle_marker_70432e6184ea3811a6bd4fac18f9d1db = L.circleMarker(
+                [37.83177185058594, -122.29402160644533],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_7d82bc5c697f69495968447a87f945d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f34668c12774a2277df2304fe008fa5 = $(`<div id="html_3f34668c12774a2277df2304fe008fa5" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-80 W/B & POWELL ST<br>         <b>City:</b> EMERYVILLE<br>         <b>Date:</b> 2025-05-26 at 2250<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_7d82bc5c697f69495968447a87f945d7.setContent(html_3f34668c12774a2277df2304fe008fa5);
+            
+        
+
+        circle_marker_70432e6184ea3811a6bd4fac18f9d1db.bindPopup(popup_7d82bc5c697f69495968447a87f945d7)
+        ;
+
+        
+    
+    
+            var circle_marker_3979185983c099177ea2cdb9ef2b9235 = L.circleMarker(
+                [37.79869079589844, -122.2177276611328],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_1699ac91bce591145f4f78cc5c0eb610 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10568ff92b308898de637aba4e8efb84 = $(`<div id="html_10568ff92b308898de637aba4e8efb84" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-580 W/B & FRUITVALE AVENUE<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2025-03-30 at 1451<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 2<br>     </div></div>`)[0];
+                popup_1699ac91bce591145f4f78cc5c0eb610.setContent(html_10568ff92b308898de637aba4e8efb84);
+            
+        
+
+        circle_marker_3979185983c099177ea2cdb9ef2b9235.bindPopup(popup_1699ac91bce591145f4f78cc5c0eb610)
+        ;
+
+        
+    
+    
+            var circle_marker_a74deaa1cf03d71e8373af8845c17c6f = L.circleMarker(
+                [37.67277145385742, -122.10562133789062],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_0cc7461123b2811b2a50971fcb7f0d01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d7f67e6e35fa316173c3a127da9dd75 = $(`<div id="html_7d7f67e6e35fa316173c3a127da9dd75" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> MEEKLAND AVENUE & WILLOW AVENUE<br>         <b>City:</b> UNINCORPORATED<br>         <b>Date:</b> 2025-02-11 at 2004<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚲 Bicycle<br></div></div>`)[0];
+                popup_0cc7461123b2811b2a50971fcb7f0d01.setContent(html_7d7f67e6e35fa316173c3a127da9dd75);
+            
+        
+
+        circle_marker_a74deaa1cf03d71e8373af8845c17c6f.bindPopup(popup_0cc7461123b2811b2a50971fcb7f0d01)
+        ;
+
+        
+    
+    
+            var circle_marker_36df83df2fda88a442e12b30eb52ded7 = L.circleMarker(
+                [37.74087142944336, -122.19645690917967],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_5e40db94034b3f9d27e072f7ae29c67f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02ba38352b41a9b954ed499102102285 = $(`<div id="html_02ba38352b41a9b954ed499102102285" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> I-880 N/B & HEGENBERGER RD<br>         <b>City:</b> OAKLAND<br>         <b>Date:</b> 2025-06-25 at 2338<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_5e40db94034b3f9d27e072f7ae29c67f.setContent(html_02ba38352b41a9b954ed499102102285);
+            
+        
+
+        circle_marker_36df83df2fda88a442e12b30eb52ded7.bindPopup(popup_5e40db94034b3f9d27e072f7ae29c67f)
+        ;
+
+        
+    
+    
+            var circle_marker_e4197d37d86e2de2e911a2c336b47999 = L.circleMarker(
+                [37.72257995605469, -122.1562271118164],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_13058562a9569e500f195da6c8230489 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14268bb8a3ff765a92e41406f8f370c0 = $(`<div id="html_14268bb8a3ff765a92e41406f8f370c0" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> WEST JUANA AV & HAYS ST<br>         <b>City:</b> SAN LEANDRO<br>         <b>Date:</b> 2023-03-10 at 2320<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_13058562a9569e500f195da6c8230489.setContent(html_14268bb8a3ff765a92e41406f8f370c0);
+            
+        
+
+        circle_marker_e4197d37d86e2de2e911a2c336b47999.bindPopup(popup_13058562a9569e500f195da6c8230489)
+        ;
+
+        
+    
+    
+            var circle_marker_5efb2a5b06a4f713f13be09bffcad033 = L.circleMarker(
+                [37.64881896972656, -122.00415802001952],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_91fd5020c68db791f86c25e8fc2f57f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fee8e184acbb279caf3b13ea79742ca1 = $(`<div id="html_fee8e184acbb279caf3b13ea79742ca1" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> N BENMORE DR & IONA WY<br>         <b>City:</b> HAYWARD<br>         <b>Date:</b> 2023-04-06 at 2246<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_91fd5020c68db791f86c25e8fc2f57f2.setContent(html_fee8e184acbb279caf3b13ea79742ca1);
+            
+        
+
+        circle_marker_5efb2a5b06a4f713f13be09bffcad033.bindPopup(popup_91fd5020c68db791f86c25e8fc2f57f2)
+        ;
+
+        
+    
+    
+            var circle_marker_f78ce512ebdfafcee40516d540a7120a = L.circleMarker(
+                [37.73041915893555, -121.91030120849608],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_ff8bc58e481fac8c6a804f69c8c0b481 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0831c78077a0f3bdba3a3af4d9f7d8d7 = $(`<div id="html_0831c78077a0f3bdba3a3af4d9f7d8d7" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> DOUGHERTY RD & FALL CREEK RD<br>         <b>City:</b> DUBLIN<br>         <b>Date:</b> 2023-06-20 at 2225<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 2<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_ff8bc58e481fac8c6a804f69c8c0b481.setContent(html_0831c78077a0f3bdba3a3af4d9f7d8d7);
+            
+        
+
+        circle_marker_f78ce512ebdfafcee40516d540a7120a.bindPopup(popup_ff8bc58e481fac8c6a804f69c8c0b481)
+        ;
+
+        
+    
+    
+            var circle_marker_6cd19e6560c2a67ec42f043688bb40d1 = L.circleMarker(
+                [37.66175079345703, -122.08796691894533],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_394805a962410f18a774c6fec732f1ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a13aa8142164a66faad920d69656fec = $(`<div id="html_2a13aa8142164a66faad920d69656fec" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> WINTON AV & MAGNA AV<br>         <b>City:</b> HAYWARD<br>         <b>Date:</b> 2023-11-05 at 214<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 2<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_394805a962410f18a774c6fec732f1ee.setContent(html_2a13aa8142164a66faad920d69656fec);
+            
+        
+
+        circle_marker_6cd19e6560c2a67ec42f043688bb40d1.bindPopup(popup_394805a962410f18a774c6fec732f1ee)
+        ;
+
+        
+    
+    
+            var circle_marker_55d9ee18b6053235128638de7a25274f = L.circleMarker(
+                [37.8915901184082, -122.27011871337892],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_8065d655250ed89b677d5d1c4d8624b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3bf821e81b47508d83a5386f51128c79 = $(`<div id="html_3bf821e81b47508d83a5386f51128c79" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> OXFORD & MARIN<br>         <b>City:</b> BERKELEY<br>         <b>Date:</b> 2024-02-12 at 1329<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_8065d655250ed89b677d5d1c4d8624b7.setContent(html_3bf821e81b47508d83a5386f51128c79);
+            
+        
+
+        circle_marker_55d9ee18b6053235128638de7a25274f.bindPopup(popup_8065d655250ed89b677d5d1c4d8624b7)
+        ;
+
+        
+    
+    
+            var circle_marker_38533cd2f09dcc75aa1515da882ce6c5 = L.circleMarker(
+                [37.63499069213867, -122.10083770751952],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_398e42516a6fdec4987749d40df949d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8685123b8fca7fc83510e1dcfc3bcb28 = $(`<div id="html_8685123b8fca7fc83510e1dcfc3bcb28" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> HESPERIAN BL & BARTLETT AV<br>         <b>City:</b> HAYWARD<br>         <b>Date:</b> 2024-02-08 at 746<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_398e42516a6fdec4987749d40df949d2.setContent(html_8685123b8fca7fc83510e1dcfc3bcb28);
+            
+        
+
+        circle_marker_38533cd2f09dcc75aa1515da882ce6c5.bindPopup(popup_398e42516a6fdec4987749d40df949d2)
+        ;
+
+        
+    
+    
+            var circle_marker_5f0fe4752bf47677a2fe91bffe36baa7 = L.circleMarker(
+                [37.69234848022461, -122.13282012939452],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_99adbd226cf20b3bf301af74d16afb72 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82190245f0ca9fcf9ad5309f70f35b1f = $(`<div id="html_82190245f0ca9fcf9ad5309f70f35b1f" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> SPRINGLAKE DR & WATERFALL WY<br>         <b>City:</b> SAN LEANDRO<br>         <b>Date:</b> 2023-10-21 at 1009<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_99adbd226cf20b3bf301af74d16afb72.setContent(html_82190245f0ca9fcf9ad5309f70f35b1f);
+            
+        
+
+        circle_marker_5f0fe4752bf47677a2fe91bffe36baa7.bindPopup(popup_99adbd226cf20b3bf301af74d16afb72)
+        ;
+
+        
+    
+    
+            var circle_marker_ba731ed5da26e828c13d404689d12a1c = L.circleMarker(
+                [37.61727142333984, -122.08830261230467],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_20249e994340abd0d73b07c91fd352b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_056094ef5d816803473214bff1bba102 = $(`<div id="html_056094ef5d816803473214bff1bba102" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> INDUSTRIAL BL & HESPERIAN BL<br>         <b>City:</b> HAYWARD<br>         <b>Date:</b> 2023-10-09 at 2053<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 3<br>     </div></div>`)[0];
+                popup_20249e994340abd0d73b07c91fd352b0.setContent(html_056094ef5d816803473214bff1bba102);
+            
+        
+
+        circle_marker_ba731ed5da26e828c13d404689d12a1c.bindPopup(popup_20249e994340abd0d73b07c91fd352b0)
+        ;
+
+        
+    
+    
+            var circle_marker_a7b7e05ef437068bdd7c614f99a6d2fa = L.circleMarker(
+                [37.701690673828125, -122.14086151123048],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_3186dbb2d491113288e0a158af971c7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4dc58aed822100b2bc04a26ea21da297 = $(`<div id="html_4dc58aed822100b2bc04a26ea21da297" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> WASHINGTON AV & HALCYON DR<br>         <b>City:</b> SAN LEANDRO<br>         <b>Date:</b> 2024-06-06 at 1016<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 3<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_3186dbb2d491113288e0a158af971c7c.setContent(html_4dc58aed822100b2bc04a26ea21da297);
+            
+        
+
+        circle_marker_a7b7e05ef437068bdd7c614f99a6d2fa.bindPopup(popup_3186dbb2d491113288e0a158af971c7c)
+        ;
+
+        
+    
+    
+            var circle_marker_d623e01f3bf7349436fe7baea9f511d4 = L.circleMarker(
+                [37.854549407958984, -122.26921081542967],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_dea4f17972717beb4aebc8d10fbc8a75 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44a5dead9fc51306ab3592219cd6b789 = $(`<div id="html_44a5dead9fc51306ab3592219cd6b789" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> ADELINE AV & ASHBY AV<br>         <b>City:</b> BERKELEY<br>         <b>Date:</b> 2024-11-01 at 24<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     </div></div>`)[0];
+                popup_dea4f17972717beb4aebc8d10fbc8a75.setContent(html_44a5dead9fc51306ab3592219cd6b789);
+            
+        
+
+        circle_marker_d623e01f3bf7349436fe7baea9f511d4.bindPopup(popup_dea4f17972717beb4aebc8d10fbc8a75)
+        ;
+
+        
+    
+    
+            var circle_marker_e51b9e6c1d05053eaab43f394596d805 = L.circleMarker(
+                [37.55282974243164, -122.04773712158205],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_35005dd2c36006346d9083ae2c034977 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27efc65f601ad820e0614a2f992c47e8 = $(`<div id="html_27efc65f601ad820e0614a2f992c47e8" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> JARVIS AV & CARDIFF ST<br>         <b>City:</b> NEWARK<br>         <b>Date:</b> 2023-12-23 at 1739<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br></div></div>`)[0];
+                popup_35005dd2c36006346d9083ae2c034977.setContent(html_27efc65f601ad820e0614a2f992c47e8);
+            
+        
+
+        circle_marker_e51b9e6c1d05053eaab43f394596d805.bindPopup(popup_35005dd2c36006346d9083ae2c034977)
+        ;
+
+        
+    
+    
+            var circle_marker_c578ec1e5d471c690ae2c29b27412a0d = L.circleMarker(
+                [37.52185821533203, -122.01390075683594],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_c5c35d6834aa9be9a5aaa2217b8b8821 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_005909058e4fa104cf01fcbceab019f2 = $(`<div id="html_005909058e4fa104cf01fcbceab019f2" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> CHERRY ST & JASMINE AV<br>         <b>City:</b> NEWARK<br>         <b>Date:</b> 2024-09-19 at 829<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🍺 Alcohol<br>🚲 Bicycle<br></div></div>`)[0];
+                popup_c5c35d6834aa9be9a5aaa2217b8b8821.setContent(html_005909058e4fa104cf01fcbceab019f2);
+            
+        
+
+        circle_marker_c578ec1e5d471c690ae2c29b27412a0d.bindPopup(popup_c5c35d6834aa9be9a5aaa2217b8b8821)
+        ;
+
+        
+    
+    
+            var circle_marker_d43d4ab3c040b9bce323a74460c81441 = L.circleMarker(
+                [37.881290435791016, -122.27523803710938],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_c6df0719acdf27e114c1893ddf8d8963 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f22b84ee3cba3175ab9dd8c1fd482a0c = $(`<div id="html_f22b84ee3cba3175ab9dd8c1fd482a0c" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> ROSE ST & JOSEPHINE ST<br>         <b>City:</b> BERKELEY<br>         <b>Date:</b> 2024-11-14 at 1731<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 1<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚶 Pedestrian<br></div></div>`)[0];
+                popup_c6df0719acdf27e114c1893ddf8d8963.setContent(html_f22b84ee3cba3175ab9dd8c1fd482a0c);
+            
+        
+
+        circle_marker_d43d4ab3c040b9bce323a74460c81441.bindPopup(popup_c6df0719acdf27e114c1893ddf8d8963)
+        ;
+
+        
+    
+    
+            var circle_marker_d7d484fe53e7ce69fcbc03192b175cba = L.circleMarker(
+                [37.66025161743164, -122.07401275634766],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6b429ddf5613300c3d3810de23f61672);
+        
+    
+        var popup_dfe94f965e403ba02f1925ac0bf29b6b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ec665392624ce36ef0d659c6b3cf64b = $(`<div id="html_2ec665392624ce36ef0d659c6b3cf64b" style="width: 100.0%; height: 100.0%;">     <div style='min-width: 250px; font-family: Arial, sans-serif;'>         <h4 style='margin: 0 0 10px 0; color: #333;'>Fatal Crash</h4>         <b>Location:</b> ORCHARD AV & MISSION BL<br>         <b>City:</b> HAYWARD<br>         <b>Date:</b> 2023-09-06 at 1736<br>         <hr style='margin: 8px 0;'>         <b>Casualties:</b><br>         • Killed: 1<br>         • Injured: 0<br>     <hr style='margin: 8px 0;'><b>Special Factors:</b><br>🚨 Hit-and-Run<br>🚲 Bicycle<br></div></div>`)[0];
+                popup_dfe94f965e403ba02f1925ac0bf29b6b.setContent(html_2ec665392624ce36ef0d659c6b3cf64b);
+            
+        
+
+        circle_marker_d7d484fe53e7ce69fcbc03192b175cba.bindPopup(popup_dfe94f965e403ba02f1925ac0bf29b6b)
+        ;
+
+        
+    
+</script>
+</html>

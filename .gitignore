@@ -23,6 +23,8 @@ wheels/
 .installed.cfg
 *.egg
 
+external/
+
 # Virtual environments
 venv/
 ENV/
@@ -51,3 +53,37 @@ env/
 # *.csv
 # *.parquet
 # outputs/maps/*.html
+
+# Claude Code
+.claude/
+CLAUDE.md
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Large data files (ignore raw/processed data, keep structure)
+*.db
+*.sqlite
+data/raw/**/*.csv
+data/raw/**/*.json
+data/raw/**/*.gpkg
+data/processed/**/*.csv
+data/processed/**/*.gpkg
+data/processed/**/*.json
+!data/raw/**/README.md
+!data/processed/**/README.md
+!data/ml/**/README.md
+
+# Outputs
+outputs/
+logs/
+*.log
+
+# Database files
+*.db
+*.sqlite
+*.db-journal
+
+docs/

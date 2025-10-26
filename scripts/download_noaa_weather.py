@@ -19,9 +19,14 @@ import requests
 import pandas as pd
 import argparse
 import sys
+import os
 from pathlib import Path
 from datetime import datetime
 import time
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Configuration
 BASE_URL = "https://www.ncei.noaa.gov/access/services/data/v1"
@@ -216,8 +221,11 @@ def clean_weather_data(df, verbose=True):
     if verbose:
         print("\n🧹 Cleaning weather data...")
 
-    # Convert date to datetime
-    df['date'] = pd.to_datetime(df['date'])
+    # Convert date to datetime (API returns 'DATE' uppercase)
+    if 'DATE' in df.columns:
+        df['date'] = pd.to_datetime(df['DATE'])
+    elif 'date' in df.columns:
+        df['date'] = pd.to_datetime(df['date'])
 
     # Convert units (NOAA uses tenths)
     if 'PRCP' in df.columns:
@@ -349,8 +357,8 @@ Get API token at: https://www.ncdc.noaa.gov/cdo-web/token
         """
     )
 
-    parser.add_argument('--token', type=str, required=True,
-                       help='NOAA CDO API token (required)')
+    parser.add_argument('--token', type=str, required=False,
+                       help='NOAA CDO API token (can also set NOAA_API_TOKEN in .env)')
     parser.add_argument('--start', type=str, default='2019-01-01',
                        help='Start date (YYYY-MM-DD, default: 2019-01-01)')
     parser.add_argument('--end', type=str, default='2024-12-31',
@@ -363,6 +371,16 @@ Get API token at: https://www.ncdc.noaa.gov/cdo-web/token
                        help='Suppress progress messages')
 
     args = parser.parse_args()
+
+    # Get API token (from args or environment)
+    token = args.token or os.getenv('NOAA_API_TOKEN')
+    if not token:
+        print("❌ Error: NOAA API token required")
+        print("   Either:")
+        print("   1. Pass --token YOUR_TOKEN")
+        print("   2. Set NOAA_API_TOKEN in .env file")
+        print("\nGet token at: https://www.ncdc.noaa.gov/cdo-web/token")
+        sys.exit(1)
 
     # Determine counties
     if args.counties:
@@ -378,7 +396,7 @@ Get API token at: https://www.ncdc.noaa.gov/cdo-web/token
         counties,
         args.start,
         args.end,
-        args.token,
+        token,
         verbose=not args.quiet
     )
 

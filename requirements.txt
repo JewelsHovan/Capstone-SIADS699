@@ -14,6 +14,11 @@ pyproj>=3.6.0
 requests>=2.31.0
 sodapy>=2.2.0
 
+# Google Drive API (for data uploads)
+google-api-python-client>=2.100.0
+google-auth-httplib2>=0.1.1
+google-auth-oauthlib>=1.1.0
+
 # Visualization & Dashboard
 streamlit>=1.28.0
 plotly>=5.17.0

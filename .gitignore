@@ -46,6 +46,10 @@ env/
 .env
 .env.local
 
+# Google Drive API credentials (NEVER COMMIT THESE!)
+credentials.json
+token.json
+
 # Streamlit
 .streamlit/secrets.toml
 

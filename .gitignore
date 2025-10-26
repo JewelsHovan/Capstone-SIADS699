@@ -91,3 +91,5 @@ logs/
 *.db-journal
 
 docs/
+data/
+cache/
